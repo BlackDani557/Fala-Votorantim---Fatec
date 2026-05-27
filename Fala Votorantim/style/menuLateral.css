@@ -1,0 +1,50 @@
+/* parte do menu lateral */
+
+aside
+{
+    width: 288px;
+    background-color: var(--CorPrincipalEscura);
+    color: white;
+    gap: 24px;
+    padding: 16px 0 26px 0;
+}
+
+aside div.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+aside img
+{
+    width: 60px;
+    height: 60px;
+    margin-left: 19px;
+    border-radius: 50%;
+}
+
+aside div.logo h1
+{
+    font-size: 1.53rem;
+}
+
+
+
+aside hr
+{
+    border: 3px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+aside section strong,h2
+{
+    margin-left: 34px;
+}
+
+li
+{
+    list-style-type: none;
+}
+

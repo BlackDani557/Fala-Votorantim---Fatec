@@ -1,0 +1,54 @@
+/* Parte do header */
+
+header {
+    width: 100%;
+    background: linear-gradient(to right, var(--CorPrincipal), var(--CorPrincipalEscura));
+    padding: 1rem;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.logo-area h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-area {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-area .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.nav-area .nav-link {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-area .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: white;
+}

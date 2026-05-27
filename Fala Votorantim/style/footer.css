@@ -1,0 +1,98 @@
+/* parte do footer */
+
+footer {
+    width: 100%;
+    background-color: var(--CorPreta);
+    padding: 20px;
+
+    min-height: 240px;
+}
+
+/* ROW */
+
+footer .row {
+    display: flex;
+}
+
+/* ÁREA DA LOGO */
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* LOGO */
+
+.footer-logo img {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+}
+
+/* ÍCONES */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons i {
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ÁREA DAS PÁGINAS */
+
+.footer-pages {
+    color: white;
+}
+
+/* TÍTULO */
+
+.footer-pages h3 {
+    font-size: 18px;
+
+    margin-bottom: 16px;
+}
+
+/* LISTA */
+
+.footer-pages ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* ITENS */
+
+.footer-pages li {
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+
+.footer-pages a {
+    text-decoration: none;
+
+    color: var(--CorCinza);
+
+    transition: 0.3s;
+}
+
+.footer-pages a:hover {
+    color: white;
+}
