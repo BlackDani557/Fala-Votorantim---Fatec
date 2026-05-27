@@ -30,6 +30,12 @@
         /* Parágrafo do footer */
         --CorCinza: #99A1AF;
 
+        /* Fundo não-focado */
+        --CorCinzaClaro: #1E2939;
+
+        /* h1, Fundo focado */
+        --CorBranco: #FFFFFF;
+
     /* Cores Extras */
 
         /* Borda Verde */

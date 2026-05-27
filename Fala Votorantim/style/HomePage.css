@@ -1,0 +1,73 @@
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+div.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+div.container {
+    margin-top: 0;
+    padding: 0;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.container h3 {
+    /* display: block;
+    margin-left: 0;
+    width: 100%; */
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+div.container h1 {
+    display: block;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.container button#Comecar {
+    margin-left: 0;
+}
+
+div.container button#verDenuncias
+{
+    margin-left: 0;
+}
+
+.centralizar {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+}
+
+#Comecar {
+    color: var(--CorPrincipal);
+}
+
+#verDenuncias {
+    border: 2px solid white;
+    background-color: var(--CorPrincipalClara);
+}
+
+#verDenuncias:hover {
+    background-color: var(--CorBranco);
+}
