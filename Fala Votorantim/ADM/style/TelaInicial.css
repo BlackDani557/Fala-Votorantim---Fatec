@@ -65,23 +65,41 @@ div.alinhasDenuncias
     justify-content: center;
 }
 
-div.DenunciasHoje, div.DenunciasResolvidas, div.DenunciasPendentes
+.alinhasDenuncias
 {
-    margin: auto auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
+    width: 100%;
+}
+
+div.DenunciasHoje,
+div.DenunciasResolvidas,
+div.DenunciasPendentes
+{
     background-color: #fff;
 
     width: 17.75rem;
     height: 10.06rem;
-    border-radius: 15px;
-}
 
-div.DenunciasHoje h2,p
-{
-    width: 100%;
+    border-radius: 15px;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+div.DenunciasHoje h2,
+div.DenunciasHoje p,
+div.DenunciasResolvidas h2,
+div.DenunciasResolvidas p,
+div.DenunciasPendentes h2,
+div.DenunciasPendentes p
+{
+    margin: 15px;
 }
 
 
