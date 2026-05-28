@@ -1,7 +1,7 @@
 //PEGAR SÓ O HEADER
 
 // pegar a pasta
-fetch("./acessibilidade/menuLateral.html")
+fetch("acessibilidade/menuLateral.html")
 
 //transforma em texto
 .then((resposta) => resposta.text())
@@ -16,7 +16,7 @@ fetch("./acessibilidade/menuLateral.html")
 
 // PEGAR SOMENTE O FOOTER
 
-fetch("../acessibilidade/Footer.html")
+fetch("acessibilidade/Footer.html")
 .then((Respostas) => Respostas.text())
 .then((dadosF) => {
     document.getElementById('footer').innerHTML = dadosF;
