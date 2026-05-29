@@ -21,3 +21,13 @@ fetch("acessibilidade/Footer.html")
 .then((dadosF) => {
     document.getElementById('footer').innerHTML = dadosF;
 })
+
+
+
+// Feed de denuncias
+
+fetch("Blocos/FeedDenuncias.html")
+.then((resposta) => resposta.text())
+.then((dados) => {
+    document.getElementById("feed").innerHTML = dados;
+})

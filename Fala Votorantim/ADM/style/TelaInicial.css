@@ -42,6 +42,10 @@ div.apresentacao{
     height: 138px;
 }
 
+div#bemvindo
+{
+    margin-right: 2rem;
+}
 
 
 
@@ -123,4 +127,10 @@ h3#SubtituloPáginaAtual
 h1#PessoaCargo
 {
     color: var(--CorPreta);
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
 }
