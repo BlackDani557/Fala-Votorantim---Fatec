@@ -24,10 +24,18 @@ fetch("acessibilidade/Footer.html")
 
 
 
-// Feed de denuncias
+// PEGAR O CADASTRO DE DENUNCIAS
 
 fetch("Blocos/CadastroDenuncia.html")
 .then((resposta) => resposta.text())
 .then((dados) => {
-    document.getElementById("feed").innerHTML = dados;
+    document.getElementById('feed').innerHTML = dados;
+})
+
+// PEGAR O FEED DE DENUNCIAS
+
+fetch("Blocos/FeedDenunciasADM.html")
+.then((resposta) => resposta.text())
+.then((dados) => {
+    document.getElementById('FeedDenuncias').innerHTML = dados;
 })

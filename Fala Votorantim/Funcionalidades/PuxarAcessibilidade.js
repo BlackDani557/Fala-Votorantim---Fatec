@@ -13,7 +13,10 @@ fetch('../Acessibilidade/Header.html')
     document.getElementById('header').innerHTML = dados;
 });
 
-// puxar o footer
+
+  ///////////////////
+ // puxar o footer /
+///////////////////
 
 // BUSCAR PÁGINA
 fetch('../Acessibilidade/Footer.html')
@@ -27,4 +30,15 @@ fetch('../Acessibilidade/Footer.html')
 .then((dadosR) =>
 {
     document.getElementById('footer').innerHTML = dadosR;
+})
+
+  ////////////////
+ //puxar o feed//
+////////////////
+
+fetch('../Bloco/FeedDenunciasGerais.html')
+.then((resposta) => resposta.text())
+.then((dados) =>
+{
+    document.getElementById('FeedDenuncias').innerHTML = dados;
 })
