@@ -1,0 +1,20 @@
+@import url(style.css);
+
+a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* só para deixar tudo lateralizado */
+div.telaPrincipal
+{
+   display: flex;
+}
+
+main
+{
+    margin-left: 1rem;
+}
+
