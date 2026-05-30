@@ -33,6 +33,11 @@ function Cadastro(e)
 // função que tem "event"
 function Logar(e)
 {
+
+    const arrayADM = [
+        {email: "adm@gmail.com", senha: "123"},
+        {email: "adm2@gmail.com", senha: "456"}
+    ]
     e.preventDefault();  // não deixa a página atualizar e apagar todos os dados
 
 

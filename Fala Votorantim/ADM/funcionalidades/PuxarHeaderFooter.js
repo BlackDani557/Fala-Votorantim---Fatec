@@ -26,7 +26,7 @@ fetch("acessibilidade/Footer.html")
 
 // Feed de denuncias
 
-fetch("Blocos/FeedDenuncias.html")
+fetch("Blocos/CadastroDenuncia.html")
 .then((resposta) => resposta.text())
 .then((dados) => {
     document.getElementById("feed").innerHTML = dados;
