@@ -1,4 +1,7 @@
 <form>
+        <h1 id="PessoaCargo">Admin</h1>
+    <h3 id="SubtituloPáginaAtual">Inicio ADM</h3>
+    <div class="Wrapper">
         <div class="row">
             <div class="col-3">
                 <label for="cep" class="form-label">CEP</label>
@@ -81,14 +84,22 @@
 
         <hr>
 
-        <div class="img">
-            <img src="../../img/upload.png" alt="">
+        <div class="alinhar">
+            <div class="upload-box">
+                <img src="../../img/upload.png" alt="Upload">
 
-            <h3>Faça upload da sua imagem</h3>
-            <h4>Formatos JPEG, PNG, até 2MB</h4>
-            <h4>Arraste e solte ou clique para selecionar</h4>
+                <h3>Faça Upload da sua imagem</h3>
+
+                <p class="formatos">Formatos JPEG, PNG, até 2MB</p>
+
+                <a href="#" class="selecionar">
+                    arraste e solte ou clique para selecionar
+                </a>
+            </div>
         </div>
-
-        <button class="btn btn-primary">Cadastrar denuncia</button>
-
+        
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary">Cadastrar denuncia</button>
+        </div>
+</div>
 </form>
