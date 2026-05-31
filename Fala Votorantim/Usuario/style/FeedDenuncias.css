@@ -8,11 +8,18 @@
 /* FEED DE DENÚNCIAS */
 /* ========================= */
 
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
 main#feed
 {
-    margin-left: 15%;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 1rem;
 }
 
 main.FeedDenuncias {
