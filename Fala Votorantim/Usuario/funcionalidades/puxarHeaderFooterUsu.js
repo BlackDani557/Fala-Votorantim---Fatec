@@ -16,7 +16,7 @@ fetch('acessibilidade/HeaderUsu.html')
 // puxar o footer
 
 // BUSCAR PÁGINA
-fetch('Acessibilidade/FooterUsu.html')
+fetch('acessibilidade/FooterUsu.html')
 
 //TRANSFORMAR EM TEXTO O QUE ESTÁ NA PÁGINA
 .then((resposta) => resposta.text())
