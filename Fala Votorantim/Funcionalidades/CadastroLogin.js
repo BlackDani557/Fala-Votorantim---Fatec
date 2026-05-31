@@ -38,30 +38,27 @@ function Cadastro(e)
 // função que tem "event"
 function Logar(e)
 {
+    e.preventDefault();
 
     const arrayADM = [
         {email: "adm@gmail.com", senha: "123", role: "adm"},
         {email: "adm2@gmail.com", senha: "456", role: "adm"}
-    ]
-    e.preventDefault();  // não deixa a página atualizar e apagar todos os dados
+    ];
 
-
-    // captura os valores passados pelo usuário
     let emailDigitado = document.getElementById("email").value;
     let senhaDigitada = document.getElementById("senha").value;
 
-    //verificar se é admin
-    const ADMEncontrado = arrayADM.find(adm => adm.email === emailDigitado && adm.senha === senhaDigitada);
+    const ADMEncontrado = arrayADM.find(
+        adm => adm.email === emailDigitado && adm.senha === senhaDigitada
+    );
 
     if(ADMEncontrado)
     {
         alert("Olá, seja bem vindo, Admin");
-        // se o if for verdadeiro, ele redireciona para a tela inicial do ADM
         window.location.href = "../ADM/TelaInicio.html";
         return;
     }
 
-    // pega "de volta" os items que foram dados na função de cima e guarda nessa variavel
     let DadosSalvos = localStorage.getItem("Usuarios");
 
     if(!DadosSalvos)
@@ -73,13 +70,14 @@ function Logar(e)
 
     let UsuarioComum = JSON.parse(DadosSalvos);
 
-    if(emailDigitado === UsuarioComum.email && senhaDigitada === UsuarioComum.senha)
+    if(emailDigitado === UsuarioComum.email &&
+       senhaDigitada === UsuarioComum.senha)
     {
         alert("Olá, seja bem vindo ao nosso site Usuário");
         window.location.href = "../Usuario/MeusDados.html";
     }
     else
     {
-        alert("email ou senha incorretos");
+        alert("Email ou senha incorretos");
     }
 }
