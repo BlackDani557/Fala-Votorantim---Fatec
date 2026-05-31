@@ -1,0 +1,24 @@
+@import url(style.css);
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.telaPrincipal
+{
+    flex: 1;
+    margin: 1rem auto;
+    width: 1024px;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+h2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
