@@ -40,12 +40,12 @@ p {
     width: 100%;
 }
 
-.container button#Comecar {
+.container #Comecar {
     width: 100%;
     height: 65.01px;
 }
 
-.container button#verDenuncias {
+.container #verDenuncias {
     width: 100%;
     height: 65.01px;
 }
