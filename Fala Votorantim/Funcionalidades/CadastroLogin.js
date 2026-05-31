@@ -13,6 +13,11 @@ function Cadastro(e)
     let senha = document.getElementById('senha').value;
     let confSenha = document.getElementById('Confsenha').value;
 
+    if(senha != confSenha)
+    {
+        alert("infelizmente, as senhas não coincidem");
+        return;
+    }
 
     // esse ele vai guardar TODOS os valores que foram passados bem AQUI
     let Usuarios = {
@@ -35,8 +40,8 @@ function Logar(e)
 {
 
     const arrayADM = [
-        {email: "adm@gmail.com", senha: "123"},
-        {email: "adm2@gmail.com", senha: "456"}
+        {email: "adm@gmail.com", senha: "123", role: "adm"},
+        {email: "adm2@gmail.com", senha: "456", role: "adm"}
     ]
     e.preventDefault();  // não deixa a página atualizar e apagar todos os dados
 
@@ -45,34 +50,36 @@ function Logar(e)
     let emailDigitado = document.getElementById("email").value;
     let senhaDigitada = document.getElementById("senha").value;
 
+    //verificar se é admin
+    const ADMEncontrado = arrayADM.find(adm => adm.email === emailDigitado && adm.senha === senhaDigitada);
+
+    if(ADMEncontrado)
+    {
+        alert("Olá, seja bem vindo, Admin");
+        // se o if for verdadeiro, ele redireciona para a tela inicial do ADM
+        window.location.href = "../ADM/TelaInicio.html";
+        return;
+    }
 
     // pega "de volta" os items que foram dados na função de cima e guarda nessa variavel
     let DadosSalvos = localStorage.getItem("Usuarios");
 
-
-    // se não existir as infos passadas, então ele dá o alert
     if(!DadosSalvos)
     {
-        // alerta o usuário(esse tbm n vou explicar pois vocês já sabem kkk)
-        alert("Usuario não encontrado, por favor, volte para o Cadastro");
+        alert("Usuário não encontrado. Por favor, faça o cadastro");
+        window.location.href = "../Views/Cadastro.html";
         return;
     }
 
-    let usuarios = JSON.parse(DadosSalvos);
+    let UsuarioComum = JSON.parse(DadosSalvos);
 
-    // se as infos capturadas pelas respectivas váriaveis, for identicas ao que tem guardado em 
-    // uma espécie de array dentro do navegador do usuario, então ele dá o alerta
-    if(emailDigitado === usuarios.email && senhaDigitada === usuarios.senha)
+    if(emailDigitado === UsuarioComum.email && senhaDigitada === UsuarioComum.senha)
     {
-        // alerta o usuário(esse tbm n vou explicar pois vocês já sabem kkk)
-        alert("Você está logado!!");
-
-        // se o if for verdadeiro, ele redireciona para a tela inicial do ADM
-        window.location.href = "../ADM/TelaInicio.html"
+        alert("Olá, seja bem vindo ao nosso site Usuário");
+        window.location.href = "../Usuario/MeusDados.html";
+    }
+    else
+    {
+        alert("email ou senha incorretos");
     }
 }
-
-
-// OBS.: ESSAS FUNÇÕES NÃO DIFERENCIAM ENTRE ADM E USUÁRIO
-// PRINCIPALMENTE O LOGAR, ENTÃO NÃO IMPORTA SE O CADASTRO FOI DE 
-// ADM OU USARIO, ELE SEMPRE IRÁ PARA A TELA INICIAL DO ADM
