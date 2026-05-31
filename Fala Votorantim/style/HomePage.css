@@ -92,10 +92,12 @@ p {
     width: fit-content;
     border-radius: 100%;
     margin: 1rem auto;
+    width: 4rem;
+    height: 4rem;
 }
 
 .ponto__icone img {
-    width: 4rem;
+    width: 3rem;
 }
 
 .resumo__ponto {
@@ -108,6 +110,12 @@ p {
 /* Ponto 1 */
 .ponto-1__icone {
     background-color: var(--BordaAzulClara);
+}
+
+/* Para transformar uma cor HEX em filter do CSS acesse esse site: */
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+.ponto-1__icone img {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(30%) saturate(5772%) hue-rotate(218deg) brightness(97%) contrast(94%);
 }
 
 .resumo__ponto-1 {
@@ -124,6 +132,10 @@ p {
     background-color: var(--BordaVerdeClara);
 }
 
+.ponto-2__icone img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(8%) saturate(6370%) hue-rotate(103deg) brightness(98%) contrast(90%);
+}
+
 .resumo__ponto-2 {
     background-color: var(--FundoVerdeClara);
     color: var(--DetalheVerde);
@@ -138,6 +150,10 @@ p {
     background-color: var(--BordaLaranja);
 }
 
+.ponto-3__icone img {
+    filter: brightness(0) saturate(100%) invert(86%) sepia(32%) saturate(315%) hue-rotate(323deg) brightness(105%) contrast(104%);
+}
+
 .resumo__ponto-3 {
     background-color: var(--FundoLaranja);
     color: var(--DetalheLaranja);
@@ -146,9 +162,14 @@ p {
 .resumo__ponto-3 p {
     color: var(--DetalheLaranja);
 }
+
 /* Ponto 4 */
 .ponto-4__icone {
     background-color: var(--BordaRoxo);
+}
+
+.ponto-4__icone img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(13%) saturate(433%) hue-rotate(207deg) brightness(117%) contrast(103%);
 }
 
 .resumo__ponto-4 {
@@ -161,7 +182,7 @@ p {
 }
 
 /* Mobile */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .centralizar {
         flex-direction: column;
         align-items: center;
@@ -173,5 +194,9 @@ p {
 
     .resumo-plataforma {
         flex-direction: column;
+    }
+
+    .resumo__ponto {
+        max-width: 100%;
     }
 }
