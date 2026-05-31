@@ -1,10 +1,9 @@
 @import url(../../style/cssReset.css);
 @import url(../../style/variaveis.css);
 @import url(../../style/style.css);
-@import url(../../ADM/style/CadastroDenunia.css);
 
 body{
-background-color: var(--CorCinzaClaro);
+    background-color: var(--CorCinzaClaro);
 }
 
 .FundoForm{
