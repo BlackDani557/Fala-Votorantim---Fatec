@@ -1,6 +1,14 @@
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
 /* Fazer a parte azul do meio do inicio */
 
-div.Wrapper
+.Wrapper
 {
     background-color: var(--CorPrincipal);
     display: flex;
@@ -9,39 +17,35 @@ div.Wrapper
     align-items: center;
     min-height: 100vh;
     height: 100%;
+    padding: 0;
+}
+
+.container
+{
+    max-width: calc(768px + 2rem);
     padding: 1rem;
 }
 
-div.container
-{
+.hero {
     color: var(--CorBranco);
-    padding: 0;
-    max-width: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-div.container h1
+.container h1
 {
     width: 100%;
-    text-align: center;
-    font-size: 3rem;
 }
 
-div.container h3 {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-div.container button#Comecar
+.container button#Comecar
 {
     width: 100%;
     height: 65.01px;
 }
 
-div.container button#verDenuncias
+.container button#verDenuncias
 {
     width: 100%;
     height: 65.01px;
