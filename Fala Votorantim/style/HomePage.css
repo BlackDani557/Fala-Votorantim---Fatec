@@ -1,7 +1,3 @@
-.text-center {
-    text-align: center;
-}
-
 p {
     text-align: justify;
 }
@@ -19,11 +15,6 @@ p {
     padding: 0;
 }
 
-.container {
-    max-width: calc(768px + 2rem);
-    padding: 1rem;
-}
-
 .hero {
     color: var(--CorBranco);
     display: flex;
@@ -36,16 +27,16 @@ p {
     background-color: var(--CorCinzaClaro);
 }
 
-.container h1 {
+h1 {
     width: 100%;
 }
 
-.container #Comecar {
+#Comecar {
     width: 100%;
     height: 65.01px;
 }
 
-.container #verDenuncias {
+#verDenuncias {
     width: 100%;
     height: 65.01px;
 }
@@ -94,7 +85,8 @@ p {
 }
 
 .resumo__ponto {
-    max-width: 368px;
+    width: 100%;
+    max-width: calc(50% - 1rem);
 }
 
 .ponto__icone {
