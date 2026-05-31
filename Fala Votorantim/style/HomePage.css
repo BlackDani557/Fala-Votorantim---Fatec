@@ -32,6 +32,10 @@ p {
     gap: 1rem;
 }
 
+.section-2 {
+    background-color: var(--CorCinzaClaro);
+}
+
 .container h1 {
     width: 100%;
 }
@@ -55,6 +59,11 @@ p {
 
 .btn {
     font-size: 1.2rem;
+}
+
+.btn-primary {
+    height: 4rem;
+    width: 100%;
 }
 
 #Comecar {
