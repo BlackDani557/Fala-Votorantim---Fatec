@@ -39,7 +39,7 @@ Você pode visualizar a interface do projeto rodando diretamente no GitHub Pages
 ![CadastroDenuncias](./Fala%20Votorantim/img/prints/CadastroDenuncias.png)
 
 ### Painel Administrativo
-![ADMTelaInicio](./Fala%20Votorantim/img/prints/ADMTelaInicio.png)
+![ADMFeedDenuncias](./Fala%20Votorantim/img/prints/ADMFeedDenuncias.png)
 
 > 🎨 Interface baseada no protótipo desenvolvido pelo grupo no Figma.
 
