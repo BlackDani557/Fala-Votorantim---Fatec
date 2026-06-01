@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
 
     <div class="telaPrincipal">
@@ -23,62 +25,65 @@
 
         <main class="carragarConteudo">
 
-        <h1 id="PessoaCargo">Admin</h1>
-            <h3 id="SubtituloPáginaAtual">Dashboard</h3>
+            <div class="container1024">
 
-            <!-- 
+                <h1 id="PessoaCargo">Admin</h1>
+                <h3 id="SubtituloPáginaAtual">Dashboard</h3>
+
+                <!-- 
                  CARDS DE MÉTRICAS
                  Mostram os números rápidos no topo
                   -->
-            <div class="alinhasDenuncias">
+                <div class="alinhasDenuncias">
 
-                <div class="DenunciasHoje">
-                    <h2 id="qtdHoje">1</h2>
-                    <p>Denuncias Hoje</p>
+                    <div class="DenunciasHoje">
+                        <h2 id="qtdHoje">1</h2>
+                        <p>Denuncias Hoje</p>
+                    </div>
+
+                    <div class="DenunciasResolvidas">
+                        <h2 id="qtdResolvidas">1</h2>
+                        <p>Resolvidas</p>
+                    </div>
+
+                    <div class="DenunciasPendentes">
+                        <h2 id="qtdPendentes">1</h2>
+                        <p>Pendentes</p>
+                    </div>
+
+                    <!-- Card do timer — começa em 00:00:00 e conta o tempo na página -->
+                    <div class="TempoMedio">
+                        <h2 id="tempoMedio">00:00:00</h2>
+                        <p>Tempo</p>
+                    </div>
+
                 </div>
 
-                <div class="DenunciasResolvidas">
-                    <h2 id="qtdResolvidas">1</h2>
-                    <p>Resolvidas</p>
-                </div>
-
-                <div class="DenunciasPendentes">
-                    <h2 id="qtdPendentes">1</h2>
-                    <p>Pendentes</p>
-                </div>
-
-                <!-- Card do timer — começa em 00:00:00 e conta o tempo na página -->
-                <div class="TempoMedio">
-                    <h2 id="tempoMedio">00:00:00</h2>
-                    <p>Tempo</p>
-                </div>
-
-            </div>
-
-            <!-- 
+                <!-- 
                  GRÁFICOS
                  Dois gráficos lado a lado-->
-            <div class="areaGraficos">
+                <div class="areaGraficos">
 
-                <!-- Gráfico de barras: denúncias por ano -->
-                <div class="graficoCard">
-                    <h2>Denuncias por ano</h2>
-                    <!-- O canvas é onde o Chart.js vai desenhar o gráfico -->
-                    <div class="graficoWrapper">
-                        <canvas id="graficoPorAno"></canvas>
+                    <!-- Gráfico de barras: denúncias por ano -->
+                    <div class="graficoCard">
+                        <h2>Denuncias por ano</h2>
+                        <!-- O canvas é onde o Chart.js vai desenhar o gráfico -->
+                        <div class="graficoWrapper">
+                            <canvas id="graficoPorAno"></canvas>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Gráfico de rosca: denúncias por tipo -->
-                <div class="graficoCard">
-                    <h2>Denuncias por Tipo</h2>
-                    <div class="graficoWrapper donuts">
-                        <!-- Legenda colorida gerada pelo JavaScript -->
-                        <div class="legendaTipo" id="legendaTipo"></div>
-                        <canvas id="graficoPorTipo"></canvas>
+                    <!-- Gráfico de rosca: denúncias por tipo -->
+                    <div class="graficoCard">
+                        <h2>Denuncias por Tipo</h2>
+                        <div class="graficoWrapper donuts">
+                            <!-- Legenda colorida gerada pelo JavaScript -->
+                            <div class="legendaTipo" id="legendaTipo"></div>
+                            <canvas id="graficoPorTipo"></canvas>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
         </main>
@@ -92,9 +97,9 @@
 
     <script>
 
-        
+
         // GRÁFICO DE BARRAS Denuncias por Ano
-        
+
 
         // Pega o elemento canvas pelo id e prepara para receber o gráfico
         const ctxAnos = document.getElementById('graficoPorAno').getContext('2d');
@@ -123,13 +128,13 @@
         });
 
 
-        
+
         // GRÁFICO DE ROSCA — Denuncias por Tipo
-        
+
         // Lista de tipos de denúncia com nome e cor
         const tipos = [
             { label: 'Buraco', color: '#6A5ACD' },
-            { label: 'Cano',   color: '#1C3CD5' },
+            { label: 'Cano', color: '#1C3CD5' },
             { label: 'Buraco', color: '#FFA500' },
             { label: 'Buraco', color: '#B0E0A0' },
             { label: 'Buraco', color: '#B0B0B0' }
@@ -169,10 +174,11 @@
         });
 
 
-      
-        
-        
+
+
+
 
     </script>
 </body>
+
 </html>

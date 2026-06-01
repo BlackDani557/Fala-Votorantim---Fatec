@@ -30,7 +30,7 @@ main
 section.ContainerFeed
 {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 div.ContainerFiltros,div.ContainerDenuncias
@@ -114,4 +114,8 @@ h3#SubtituloPáginaAtual
 h1#PessoaCargo
 {
     color: var(--CorPreta);
+}
+
+#ResumoTudo {
+    justify-content: space-between;
 }

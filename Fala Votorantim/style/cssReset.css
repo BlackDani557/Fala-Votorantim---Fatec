@@ -48,12 +48,21 @@ p {
     max-width: calc(768px + 2rem);
     margin: 0 auto;
     padding: 1rem;
+    width: 100%;
 }
 
 .container1024 {
     max-width: calc(1024px + 2rem);
     margin: 0 auto;
     padding: 1rem;
+    width: 100%;
+}
+
+.container1280 {
+    max-width: calc(1280px + 2rem);
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
 }
 
 .box-shadow {
