@@ -52,3 +52,23 @@ header .row {
     background-color: rgba(255, 255, 255, 0.18);
     color: white;
 }
+
+.nav-link {
+    height: 48px;
+
+    /* Centralização */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pessoa a {
+    padding: 0.5rem !important;
+    border-radius: 100% !important;
+}
+
+/* https://angel-rs.github.io/css-color-filter-generator/ */
+.btn-pessoa a img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7484%) hue-rotate(205deg) brightness(105%) contrast(103%);
+}
