@@ -19,118 +19,211 @@ div.telaPrincipal
 main.carragarConteudo
 {
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
-div.apresentacao img
+#PessoaCargo
 {
-    margin-left: 2.875rem;
-    margin-right: auto;
-
-
-    border: 2px black solid;
-    border-radius: 50%;
-
-    width: 85px;
-    height: 85px;
+    color: var(--CorPreta);
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
-div.apresentacao{
-    display: flex;
-    align-items: center;
-
-    height: 138px;
-}
-
-div#bemvindo
+#SubtituloPáginaAtual
 {
-    margin-right: 2rem;
+    color: var(--CorCinza);
+    margin-bottom: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
-
-
-div.DenunciasRecentes, div.apresentacao
+.apresentacao
 {
-    border: none;
-
-    padding: 1rem;
-    margin: 1rem;
-
-    background-color: #fff;
+    background: var(--CorBranco);
     border-radius: 15px;
 
-    height: 138px;
-}
+    padding: 1rem 2rem;
 
-div.alinhasDenuncias
-{
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.alinhasDenuncias
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 1rem;
 
     width: 100%;
 }
 
-div.DenunciasHoje,
-div.DenunciasResolvidas,
-div.DenunciasPendentes
+.apresentacao img
 {
-    background-color: #fff;
+    width: 85px;
+    height: 85px;
 
-    width: 17.75rem;
-    height: 10.06rem;
+    min-width: 85px;
+
+    border-radius: 50%;
+
+    background-color: var(--CorCinzaClaro);
+}
+
+#bemvindo
+{
+    text-align: center;
+}
+
+#bemvindo h3
+{
+    color: var(--CorPreta);
+    margin: 0;
+}
+
+#bemvindo p
+{
+    color: var(--CorCinzaEscura);
+    margin: 0;
+}
+
+.alinhasDenuncias
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.DenunciasHoje,
+.DenunciasResolvidas,
+.DenunciasPendentes
+{
+    background: var(--CorBranco);
 
     border-radius: 15px;
+
+    min-height: 120px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+
+    padding: 1rem;
 }
 
-div.DenunciasHoje h2,
-div.DenunciasHoje p,
-div.DenunciasResolvidas h2,
-div.DenunciasResolvidas p,
-div.DenunciasPendentes h2,
-div.DenunciasPendentes p
+.DenunciasHoje
 {
-    margin: 15px;
+    border-bottom: 4px solid var(--BordaLaranja);
 }
 
+.DenunciasResolvidas
+{
+    border-bottom: 4px solid var(--BordaAmarela);
+}
 
- div.MinhasDenuncias
- {
-    border: none;
+.DenunciasPendentes
+{
+    border-bottom: 4px solid var(--BordaVerde);
+}
 
-    padding: 0.5rem;
-    margin: 0.8rem;
+.DenunciasHoje h2,
+.DenunciasResolvidas h2,
+.DenunciasPendentes h2
+{
+    margin: 0;
+    color: var(--CorPreta);
+}
 
-    background-color: #fff;
+.DenunciasHoje p,
+.DenunciasResolvidas p,
+.DenunciasPendentes p
+{
+    margin-top: .5rem;
+    color: var(--CorCinzaEscura);
+}
+
+.MinhasDenuncias,
+.DenunciasRecentes
+{
+    background: var(--CorBranco);
+
     border-radius: 15px;
- }
 
-h3#SubtituloPáginaAtual
-{
-    color: var(--CorCinza);
-    margin-left: 2rem;
+    margin-top: 1rem;
+
+    padding: 1.5rem;
+
+    min-height: 150px;
 }
 
-h1#PessoaCargo
+.MinhasDenuncias h2,
+.DenunciasRecentes h2
 {
     color: var(--CorPreta);
+    font-size: 1.8rem;
+}
+
+.MinhasDenuncias p,
+.DenunciasRecentes p
+{
+    color: var(--CorCinza);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* DEIXAR TUDO RESPONSIVO*/
+
+@media (max-width: 992px)
+{
+    .alinhasDenuncias
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px)
+{
+    .apresentacao
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .alinhasDenuncias
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .DenunciasHoje,
+    .DenunciasResolvidas,
+    .DenunciasPendentes
+    {
+        width: 100%;
+    }
 }
 
 a
 {
+    color: white;
     text-decoration: none;
-    color: #fff;
+}
+
+@media (max-width: 480px)
+{
+    main.carragarConteudo
+    {
+        padding: 1rem;
+    }
+
+    .MinhasDenuncias,
+    .DenunciasRecentes,
+    .apresentacao
+    {
+        padding: 1rem;
+    }
+
+    .MinhasDenuncias h2,
+    .DenunciasRecentes h2
+    {
+        font-size: 1.4rem;
+    }
 }

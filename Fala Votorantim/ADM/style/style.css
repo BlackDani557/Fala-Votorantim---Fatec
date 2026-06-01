@@ -2,3 +2,29 @@
 @import url(../../style/cssReset.css);
 @import url(../../style/footer.css);
 @import url(../../style/menuLateral.css);
+
+/* RESET GERAL */
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IMPEDIR SCROLL HORIZONTAL */
+html,
+body
+{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* TAMANHO DE FONTE ADAPTÁVEL */
+html
+{
+    font-size: clamp(14px, 1vw, 18px);
+    scroll-behavior: smooth;
+}
