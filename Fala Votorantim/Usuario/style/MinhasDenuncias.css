@@ -1,1 +1,14 @@
-@import url(style.css);
+@import url(FeedDenuncias.css);
+@import url(../../style/cssReset.css);
+@import url(../../style/variaveis.css);
+@import url(../../style/style.css);
+
+main
+{
+    margin: 1rem auto 1rem auto;
+}
+
+h2#DenunciasSalvas
+{
+    margin-top: 2rem;
+}
