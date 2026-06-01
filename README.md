@@ -155,7 +155,7 @@ Para a evolução do projeto nas próximas etapas acadêmicas, planeja-se:
 
 ---
 
-## 👨‍🎓 Desenvolvido por
+## 👨‍🎓 Desenvolvedores
 
 * [Cesar Henrique](https://github.com/cesarhenrique03)
 * [Daniel de Freitas](https://github.com/BlackDani557)
