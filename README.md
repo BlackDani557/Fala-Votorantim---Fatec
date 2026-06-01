@@ -6,7 +6,7 @@ Plataforma web para registro e acompanhamento de denúncias urbanas, aproximando
 
 ---
 
-## 🌐 Acesso ao Projeto
+## 🌐 Acesso ao Projeto <a id="acesso-ao-projeto"></a>
 
 Você pode visualizar a interface do projeto rodando diretamente no GitHub Pages:
 
@@ -16,18 +16,18 @@ Você pode visualizar a interface do projeto rodando diretamente no GitHub Pages
 
 ## 📌 Índice
 
-- [📸 Preview](#-preview)
-- [📖 Sobre o Projeto](#-sobre-o-projeto)
-- [✨ Funcionalidades Implementadas](#-funcionalidades-implementadas)
-- [📱 Telas Desenvolvidas](#-telas-desenvolvidas)
-- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
-- [🚀 Como Executar](#-como-executar)
-- [🎯 Próximas Etapas](#-próximas-etapas)
-- [👨‍🎓 Desenvolvedores](#-desenvolvedores)
+- [📸 Preview](#preview)
+- [📖 Sobre o Projeto](#sobre-o-projeto)
+- [✨ Funcionalidades Implementadas](#funcionalidades-implementadas)
+- [📱 Telas Desenvolvidas](#telas-desenvolvidas)
+- [🛠️ Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [🚀 Como Executar](#como-executar)
+- [🎯 Próximas Etapas](#proximas-etapas)
+- [👨‍🎓 Desenvolvedores](#desenvolvedores)
 
 ---
 
-## 📸 Preview
+## 📸 Preview <a id="preview"></a>
 
 ### Página Inicial
 ![HomePage](./Fala%20Votorantim/img/prints/HomePage.png)
@@ -45,7 +45,7 @@ Você pode visualizar a interface do projeto rodando diretamente no GitHub Pages
 
 ---
 
-## 📖 Sobre o Projeto
+## 📖 Sobre o Projeto <a id="sobre-o-projeto"></a>
 
 O **Fala Votorantim** é um Projeto Integrador desenvolvido por estudantes da **Fatec Votorantim**. O objetivo é criar uma solução tecnológica de impacto social que facilite a comunicação entre os munícipes e a Prefeitura.
 
@@ -55,7 +55,7 @@ O sistema permite que cidadãos registrem e acompanhem denúncias urbanas, como 
 
 ---
 
-## ✨ Funcionalidades Implementadas
+## ✨ Funcionalidades Implementadas <a id="funcionalidades-implementadas"></a>
 
 - Interface baseada em protótipo do Figma
 - Sistema de navegação entre páginas iniciais, usuário e admin
@@ -64,7 +64,7 @@ O sistema permite que cidadãos registrem e acompanhem denúncias urbanas, como 
 
 ---
 
-## 📱 Telas Desenvolvidas
+## 📱 Telas Desenvolvidas <a id="telas-desenvolvidas"></a>
 
 <table>
   <tr>
@@ -96,7 +96,7 @@ O sistema permite que cidadãos registrem e acompanhem denúncias urbanas, como 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas <a id="tecnologias-utilizadas"></a>
 
 O projeto foi construído utilizando tecnologias web padrão para o front-end:
 
@@ -107,7 +107,7 @@ O projeto foi construído utilizando tecnologias web padrão para o front-end:
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Como Executar <a id="como-executar"></a>
 
 ### 1. Clone o repositório
 ```bash
@@ -143,7 +143,7 @@ Navegue pelas pastas do seu sistema operacional até `Fala Votorantim/Views/` e 
 
 ---
 
-## 🎯 Próximas Etapas
+## 🎯 Próximas Etapas <a id="proximas-etapas"></a>
 
 Para a evolução do projeto nas próximas etapas acadêmicas, planeja-se:
 
@@ -155,7 +155,7 @@ Para a evolução do projeto nas próximas etapas acadêmicas, planeja-se:
 
 ---
 
-## 👨‍🎓 Desenvolvedores
+## 👨‍🎓 Desenvolvedores <a id="desenvolvedores"></a>
 
 * [Cesar Henrique](https://github.com/cesarhenrique03)
 * [Daniel de Freitas](https://github.com/BlackDani557)
