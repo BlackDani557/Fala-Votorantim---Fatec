@@ -96,3 +96,114 @@ footer .row {
 .footer-pages a:hover {
     color: var(--CorBranco);
 }
+
+/* ----------------------------------------*/
+@media (max-width: 768px)
+{
+    footer
+    {
+        padding: 24px 16px;
+    }
+
+    footer .row
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .footer-logo
+    {
+        align-items: center;
+    }
+
+    .social-icons
+    {
+        justify-content: center;
+    }
+
+    .footer-pages
+    {
+        width: 100%;
+    }
+
+    .footer-pages ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 480px)
+{
+    footer
+    {
+        padding: 20px 12px;
+        min-height: auto;
+    }
+
+    .footer-logo img
+    {
+        width: 56px;
+        height: 56px;
+    }
+
+    .social-icons i
+    {
+        font-size: 20px;
+    }
+
+    .footer-pages h3
+    {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-pages li
+    {
+        margin-bottom: 8px;
+    }
+
+    .footer-pages a
+    {
+        font-size: 0.9rem;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 320px)
+{
+    footer
+    {
+        padding: 16px 8px;
+    }
+
+    .footer-logo img
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-icons
+    {
+        gap: 8px;
+    }
+
+    .social-icons i
+    {
+        font-size: 18px;
+    }
+
+    .footer-pages h3
+    {
+        font-size: 0.9rem;
+    }
+
+    .footer-pages a
+    {
+        font-size: 0.8rem;
+    }
+}

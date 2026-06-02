@@ -52,7 +52,7 @@ aside hr
     margin: 1.5rem auto 0 auto;
 }
 
-aside section strong,h2
+aside section strong,strong h2
 {
     margin-left: 34px;
 }
@@ -74,16 +74,20 @@ li
 {
    aside 
    {
-    width: 144px;
+     width: 144px;
    }
 
    aside img
    {
         width: 30px;
         height: 30px;
-        margin-left: 9px;
+        margin-left: 12px;
    }
-
+   aside section strong,strong h2
+    {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
    aside div.logo h1
     {
         margin-top: 10px;
@@ -93,6 +97,25 @@ li
     aside hr
     {
         width: 109px;
+    }
+
+    aside section strong,div h2
+    {
+        margin-left: 17px;
+    }
+
+    section#adm ul li
+    {
+        margin: 2.5rem 1rem 2.5rem 1rem;
+    }
+
+    section#pagina ul li{
+        margin: 2.5rem 1rem 2.5rem 1rem;
+    }
+
+    section#add ul li
+    {
+        margin: 2.5rem 1rem 2.5rem 1rem;
     }
 }
 
