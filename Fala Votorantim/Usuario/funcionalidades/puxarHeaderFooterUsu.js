@@ -28,12 +28,3 @@ fetch('acessibilidade/FooterUsu.html')
 {
     document.getElementById('footer').innerHTML = dadosR;
 })
-
-
-// PUXAR O FEED DE DENUNCIAS
-
-fetch("Blocos/FeedDenunciasUsu.html")
-.then((resposta) => resposta.text())
-.then((dados) => {
-    document.getElementById('feed').innerHTML = dados
-})
