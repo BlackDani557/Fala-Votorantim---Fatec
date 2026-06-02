@@ -2,6 +2,11 @@ p {
     text-align: justify;
 }
 
+/* Background do Botão da página que está aberta */
+#inicio {
+    background-color: var(--CorPrincipalClara);
+}
+
 /* Fazer a parte azul do meio do inicio */
 
 .Wrapper {
@@ -180,6 +185,11 @@ h1 {
 
 .resumo__ponto-4 p {
     color: var(--DetalheCinza);
+}
+
+/* List items */
+li {
+    color: var(--CorCinzaEscura);
 }
 
 /* Mobile */

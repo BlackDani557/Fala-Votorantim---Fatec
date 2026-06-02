@@ -6,6 +6,11 @@ body{
     background-color: var(--CorCinzaClaro);
 }
 
+/* Background do Botão da página que está aberta */
+#cadastrarDenuncia {
+    background-color: var(--CorPrincipalClara);
+}
+
 .FundoForm{
     width: calc( 100% - 128px );
     margin: 16px 64px 32px 64px;

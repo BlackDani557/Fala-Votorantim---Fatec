@@ -1,0 +1,196 @@
+/* Parte de fundo da página */
+.LoginWrapper
+{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #DCE1EB;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px;
+}
+
+/* Background do Botão da página que está aberta */
+#cadastrar {
+    background-color: var(--CorPrincipalClara);
+}
+
+/* definir tamanho do containers */
+
+div.Container
+{
+    width: 100%;
+    max-width: 430px;
+}
+
+/* parte do Form */
+
+.LoginForm
+{
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    /* box-shadow: 0px 4px 12px rgba(0,0,0,0.10); */
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* parte da porta */
+
+.LogoLogin
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoLogin i
+{
+    font-size: 40px;
+
+    color: var(--CorPreta);
+}
+
+/* parte do titulo ("Seja Bem-Vindo") */
+
+.LoginForm h2
+{
+    text-align: center;
+
+    color: var(--CorPreta);
+
+    font-size: 36px;
+    font-weight: 700;
+
+    margin: 0;
+}
+
+/* todos os inputs groups do form */
+
+.InputGroup
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* todos os labels do form */
+
+.InputGroup label
+{
+    color: var(--CorPreta);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+/* todos os inputs do form */
+
+.InputGroup input
+{
+    width: 100%;
+    height: 48px;
+
+    border: 2px solid #B8C0CC;
+    border-radius: 10px;
+
+    padding: 0px 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    color: var(--DetalheCinza);
+
+    font-size: 15px;
+}
+
+.InputGroup input::placeholder
+{
+    color: #9AA3B2;
+}
+
+.InputGroup input:focus
+{
+    border-color: var(--CorPrincipal);
+
+    box-shadow: 0px 0px 0px 3px rgba(20,71,230,0.15);
+}
+
+/* botão de enviar */
+
+.BtnEntrar
+{
+    width: 100%;
+    height: 52px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--CorPrincipal);
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    margin: 0;
+}
+
+.BtnEntrar:hover
+{
+    background-color: var(--CorPrincipalEscura);
+}
+
+/* texto para enviar de volta para o cadastrar  */
+
+.CadastroTexto
+{
+    text-align: center;
+
+    color: var(--DetalheCinza);
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+.CadastroTexto a
+{
+    color: var(--CorPrincipal);
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.CadastroTexto a:hover
+{
+    text-decoration: underline;
+}
+
+/* Esse é para deixar a página mais responsivo  */
+
+@media(max-width: 576px)
+{
+    .LoginForm h2
+    {
+        font-size: 28px;
+    }
+}

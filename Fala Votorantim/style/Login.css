@@ -13,6 +13,11 @@
     padding: 16px;
 }
 
+/* Background do Botão da página que está aberta */
+#login {
+    background-color: var(--CorPrincipalClara);
+}
+
 /* definir tamanho do containers */
 
 div.Container
