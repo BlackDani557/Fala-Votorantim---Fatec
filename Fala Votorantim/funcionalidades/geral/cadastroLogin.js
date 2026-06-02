@@ -55,7 +55,7 @@ function Logar(e)
     if(ADMEncontrado)
     {
         alert("Olá, seja bem vindo, Admin");
-        window.location.href = "../ADM/TelaInicio.html";
+        window.location.href = "../ADM/telaInicio.html";
         return;
     }
 
@@ -64,7 +64,7 @@ function Logar(e)
     if(!DadosSalvos)
     {
         alert("Usuário não encontrado. Por favor, faça o cadastro");
-        window.location.href = "../Views/Cadastro.html";
+        window.location.href = "../Views/cadastro.html";
         return;
     }
 
@@ -74,7 +74,7 @@ function Logar(e)
        senhaDigitada === UsuarioComum.senha)
     {
         alert("Olá, seja bem vindo ao nosso site Usuário");
-        window.location.href = "../Usuario/FeedDenuncias.html";
+        window.location.href = "../Usuario/feedDenuncias.html";
     }
     else
     {

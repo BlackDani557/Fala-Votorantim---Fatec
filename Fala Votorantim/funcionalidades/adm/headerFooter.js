@@ -16,7 +16,7 @@ fetch("acessibilidade/menuLateral.html")
 
 // PEGAR SOMENTE O FOOTER
 
-fetch("acessibilidade/Footer.html")
+fetch("acessibilidade/footer.html")
 .then((Respostas) => Respostas.text())
 .then((dadosF) => {
     document.getElementById('footer').innerHTML = dadosF;
@@ -26,7 +26,7 @@ fetch("acessibilidade/Footer.html")
 
 // PEGAR O CADASTRO DE DENUNCIAS
 
-fetch("Blocos/CadastroDenuncia.html")
+fetch("Blocos/cadastroDenuncia.html")
 .then((resposta) => resposta.text())
 .then((dados) => {
     document.getElementById('feed').innerHTML = dados;

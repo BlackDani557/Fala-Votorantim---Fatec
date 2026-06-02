@@ -2,7 +2,7 @@
  //puxar o feed//
 ////////////////
 
-fetch('../Bloco/FeedDenunciasGerais.html')
+fetch('/Fala Votorantim/componentes/geral/feedDenunciasGerais.html')
 .then((resposta) => resposta.text())
 .then((dados) =>
 {
@@ -10,7 +10,7 @@ fetch('../Bloco/FeedDenunciasGerais.html')
 })
 
 //Puxar filtro para Feed de Denúncias
-fetch('../Acessibilidade/filtroDenuncias.html')
+fetch('/Fala Votorantim/componentes/geral/filtroDenuncias.html')
 .then((resposta) => resposta.text())
 .then((dados) => {
     document.getElementById('filtros').innerHTML = dados;

@@ -1,7 +1,7 @@
 // puxar o header
 
 // BUSCAR PÁGINA
-fetch('../Acessibilidade/Header.html')
+fetch('/Fala Votorantim/componentes/geral/header.html')
 
 //TRANSFORMAR EM TEXTO O QUE ESTÁ NA PÁGINA
 .then((response) => response.text())
@@ -19,7 +19,7 @@ fetch('../Acessibilidade/Header.html')
 ///////////////////
 
 // BUSCAR PÁGINA
-fetch('../Acessibilidade/Footer.html')
+fetch('/Fala Votorantim/componentes/geral/footer.html')
 
 //TRANSFORMAR EM TEXTO O QUE ESTÁ NA PÁGINA
 .then((resposta) => resposta.text())
