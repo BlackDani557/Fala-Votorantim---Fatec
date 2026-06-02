@@ -74,7 +74,7 @@ function Logar(e)
        senhaDigitada === UsuarioComum.senha)
     {
         alert("Olá, seja bem vindo ao nosso site Usuário");
-        window.location.href = "../Usuario/MeusDados.html";
+        window.location.href = "../Usuario/FeedDenuncias.html";
     }
     else
     {
