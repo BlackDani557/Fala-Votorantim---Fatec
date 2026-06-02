@@ -173,6 +173,12 @@ main.carragarConteudo
     margin-top: 2rem;
 }
 
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
 
 /* DEIXAR TUDO RESPONSIVO*/
 
@@ -203,12 +209,6 @@ main.carragarConteudo
     {
         width: 100%;
     }
-}
-
-a
-{
-    color: white;
-    text-decoration: none;
 }
 
 @media (max-width: 480px)
