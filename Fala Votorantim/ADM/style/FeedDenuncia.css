@@ -120,6 +120,11 @@ h1#PessoaCargo
     justify-content: space-between;
 }
 
+div.topbar
+{
+    display: none;
+}
+
 /* ----------------------------------------*/
 @media (max-width: 992px)
 {
@@ -319,6 +324,7 @@ h1#PessoaCargo
 /* ----------------------------------------*/
 @media (max-width: 320px)
 {
+    
     .ContainerFeed h2
     {
         font-size: 22px;
@@ -345,5 +351,31 @@ h1#PessoaCargo
     .ImagemDenuncia
     {
         height: 140px;
+    }
+
+        div.topbar
+    {
+        display: flex;
+        background-color: var(--CorPrincipalEscura);
+        color: white;
+        gap: 24px;
+        padding: 16px 0 26px 0;
+    }
+
+    div.topbar h2
+    {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: 1rem;
+
+        font-size: 1rem;
+    }
+
+    div.topbar button
+    {
+        margin: 0 1rem;
+        border: none;
+        background-color: var(--CorPrincipalEscura);
+        color: white;
     }
 }
