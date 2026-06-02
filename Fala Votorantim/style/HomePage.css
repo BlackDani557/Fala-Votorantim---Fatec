@@ -2,6 +2,11 @@ p {
     text-align: justify;
 }
 
+/* Background do Botão da página que está aberta */
+#inicio {
+    background-color: var(--CorPrincipalClara);
+}
+
 /* Fazer a parte azul do meio do inicio */
 
 .Wrapper {

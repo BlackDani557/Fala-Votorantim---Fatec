@@ -7,6 +7,11 @@ body
     flex-direction: column;
 }
 
+/* Background do Botão da página que está aberta */
+#notificacoes {
+    background-color: var(--CorPrincipalClara);
+}
+
 main.telaPrincipal
 {
     flex: 1;

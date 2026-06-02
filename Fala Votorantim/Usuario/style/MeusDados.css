@@ -8,6 +8,11 @@ body
     background-color: var(--CorCinzaClaro);
 }
 
+/* Background do Botão da página que está aberta */
+#meusDados {
+    background-color: var(--CorPrincipalClara);
+}
+
 main#telaPrincipal
 {
     background-color: white;
