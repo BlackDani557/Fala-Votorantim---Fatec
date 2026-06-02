@@ -32,7 +32,16 @@ main.FeedDenuncias {
 /* CONTAINER GERAL */
 
 .ContainerFeed {
-    width: 1024px;
+    min-width: 100%;
+}
+
+.ContainerFiltros {
+    /* width: 1024px; */
+    min-width: 100%;
+}
+
+.ContainerDenuncias {
+    min-width: 100%;
 }
 
 /* TÍTULO */

@@ -1,165 +1,195 @@
 <section class="ContainerFeed">
 
-            <!-- TÍTULO DA PÁGINA -->
-            <h1 id="PessoaCargo">Feed de denuncias</h1>
+    <!-- TÍTULO DA PÁGINA -->
+    <h1 id="PessoaCargo">Feed de denuncias</h1>
 
 
-            <!-- FILTROS DAS DENUNCIAS -->
-            <div class="ContainerFiltros box-shadow">
+    <!-- FILTROS DAS DENUNCIAS -->
+    <div class="ContainerFiltros box-shadow">
 
-                <h3>Filtro</h3>
+        <h3>Filtro</h3>
 
-                <div class="Filtros">
+        <div class="Filtros">
 
-                    <input type="text" placeholder="Busca.">
-                    <input type="text" placeholder="Busca.">
-                    <input type="text" placeholder="Busca.">
+            <input type="text" name="busca" id="busca" class="form-control" placeholder="Buscar denúncias...">
+            <select name="categoria" id="categoria" class="form-select" aria-label="Default select example">
+                <option selected>Selecione uma categoria</option>
+
+                <optgroup label="Infraestrutura">
+                    <option value="">Buracos</option>
+                    <option value="">Calçadas danificadas</option>
+                    <option value="">Sinalização quebrada</option>
+                </optgroup>
+
+                <optgroup label="Iluminação">
+                    <option value="">Postes apagados</option>
+                    <option value="">Falta de iluminação</option>
+                    <option value="">Problemas eletronicos urbanos</option>
+                </optgroup>
+
+                <optgroup label="Limpeza Urbana">
+                    <option value="">Lixo acumulado</option>
+                    <option value="">Entulho irregular</option>
+                    <option value="">Terrenos abandonados</option>
+                </optgroup>
+
+                <optgroup label="Saneamento">
+                    <option value="">Vazamento de água</option>
+                    <option value="">Esgoto</option>
+                    <option value="">Problemas em vias publicas</option>
+                </optgroup>
+            </select>
+            <select name="status" id="status" class="form-select">
+                <option value="Em Andamento">Em Andamento</option>
+                <option value="Pendente">Pendente</option>
+                <option value="Resolvido">Resolvido</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- FEED DE DENUNCIAS -->
+    <div class="ContainerDenuncias box-shadow">
+
+        <!-- PRIMEIRO CAD -->
+        <div class="CardDenuncia Azul">
+
+            <div class="InfoDenuncia">
+
+                <div class="TopInfo">
+
+                    <span class="Numero">
+                        # 2255510
+                    </span>
+
+                    <span class="Status StatusAzul">
+                        Em andamento
+                    </span>
+
+                </div>
+
+                <h3>Buraco grande na rua das Florestas</h3>
+
+                <span class="Categoria">
+                    Buraco na via
+                </span>
+
+                <p>
+                    Buraco profundo causando risco...
+                </p>
+
+                <div class="RodapeInfo">
+
+                    <span>
+                        Rua das Flores, 123, Centro
+                    </span>
+
+                    <span>
+                        10/05/2024, 14:30
+                    </span>
 
                 </div>
 
             </div>
 
-            <!-- FEED DE DENUNCIAS -->
-            <div class="ContainerDenuncias box-shadow">
+            <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
+            <div class="ImagemDenuncia"></div>
 
-                <!-- PRIMEIRO CAD -->
-                <div class="CardDenuncia Azul">
+        </div>
 
-                    <div class="InfoDenuncia">
+        <!-- SEGUNDO CARD -->
+        <div class="CardDenuncia Verde">
 
-                        <div class="TopInfo">
+            <div class="InfoDenuncia">
 
-                            <span class="Numero">
-                                # 2255510
-                            </span>
+                <div class="TopInfo">
 
-                            <span class="Status StatusAzul">
-                                Em andamento
-                            </span>
+                    <span class="Numero">
+                        #2024051402
+                    </span>
 
-                        </div>
-
-                        <h3>Buraco grande na rua das Florestas</h3>
-
-                        <span class="Categoria">
-                            Buraco na via
-                        </span>
-
-                        <p>
-                            Buraco profundo causando risco...
-                        </p>
-
-                        <div class="RodapeInfo">
-
-                            <span>
-                                Rua das Flores, 123, Centro
-                            </span>
-
-                            <span>
-                                10/05/2024, 14:30
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
-                    <div class="ImagemDenuncia"></div>
+                    <span class="Status StatusVerde">
+                        Resolvido
+                    </span>
 
                 </div>
 
-                <!-- SEGUNDO CARD -->
-                <div class="CardDenuncia Verde">
+                <h3>Poste de luz queimada</h3>
 
-                    <div class="InfoDenuncia">
+                <span class="Categoria">
+                    Iluminação
+                </span>
 
-                        <div class="TopInfo">
+                <p>
+                    Poste sem iluminação há mais...
+                </p>
 
-                            <span class="Numero">
-                                #2024051402
-                            </span>
+                <div class="RodapeInfo">
 
-                            <span class="Status StatusVerde">
-                                Resolvido
-                            </span>
+                    <span>
+                        Avenida Principal, 456, Jardim América
+                    </span>
 
-                        </div>
-
-                        <h3>Poste de luz queimada</h3>
-
-                        <span class="Categoria">
-                            Iluminação
-                        </span>
-
-                        <p>
-                            Poste sem iluminação há mais...
-                        </p>
-
-                        <div class="RodapeInfo">
-
-                            <span>
-                                Avenida Principal, 456, Jardim América
-                            </span>
-
-                            <span>
-                                08/05/2024, 09:15
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
-                    <div class="ImagemDenuncia"></div>
-
-                </div>
-
-                <!-- TERCEIRO CAD -->
-                <div class="CardDenuncia Amarelo">
-
-                    <div class="InfoDenuncia">
-
-                        <div class="TopInfo">
-
-                            <span class="Numero">
-                                #2024051403
-                            </span>
-
-                            <span class="Status StatusAmarelo">
-                                Pendente
-                            </span>
-
-                        </div>
-
-                        <h3>Lixo acumulado na esquina</h3>
-
-                        <span class="Categoria">
-                            Coleta de Lixo
-                        </span>
-
-                        <p>
-                            Acúmulo de lixo na esquina há 4 dias...
-                        </p>
-
-                        <div class="RodapeInfo">
-
-                            <span>
-                                Rua Santos Dumont, 789, Vila Nova
-                            </span>
-
-                            <span>
-                                12/05/2024, 16:45
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
-                    <div class="ImagemDenuncia"></div>
+                    <span>
+                        08/05/2024, 09:15
+                    </span>
 
                 </div>
 
             </div>
+
+            <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
+            <div class="ImagemDenuncia"></div>
+
+        </div>
+
+        <!-- TERCEIRO CAD -->
+        <div class="CardDenuncia Amarelo">
+
+            <div class="InfoDenuncia">
+
+                <div class="TopInfo">
+
+                    <span class="Numero">
+                        #2024051403
+                    </span>
+
+                    <span class="Status StatusAmarelo">
+                        Pendente
+                    </span>
+
+                </div>
+
+                <h3>Lixo acumulado na esquina</h3>
+
+                <span class="Categoria">
+                    Coleta de Lixo
+                </span>
+
+                <p>
+                    Acúmulo de lixo na esquina há 4 dias...
+                </p>
+
+                <div class="RodapeInfo">
+
+                    <span>
+                        Rua Santos Dumont, 789, Vila Nova
+                    </span>
+
+                    <span>
+                        12/05/2024, 16:45
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ESSE É O QUADRADO VAZIO DAS DIVS -->
+            <div class="ImagemDenuncia"></div>
+
+        </div>
+
+    </div>
 
 </section>
