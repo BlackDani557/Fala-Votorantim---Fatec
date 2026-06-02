@@ -32,10 +32,3 @@ fetch("Blocos/CadastroDenuncia.html")
     document.getElementById('feed').innerHTML = dados;
 })
 
-// PEGAR O FEED DE DENUNCIAS
-
-fetch("Blocos/FeedDenunciasADM.html")
-.then((resposta) => resposta.text())
-.then((dados) => {
-    document.getElementById('FeedDenuncias').innerHTML = dados;
-})
