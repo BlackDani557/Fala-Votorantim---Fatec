@@ -119,3 +119,231 @@ h1#PessoaCargo
 #ResumoTudo {
     justify-content: space-between;
 }
+
+/* ----------------------------------------*/
+@media (max-width: 992px)
+{
+    main
+    {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    
+
+    div.ContainerFiltros,
+    div.ContainerDenuncias
+    {
+        width: 100%;
+    }
+
+    #ResumoTudo
+    {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    div#resumo,
+    div.col-3
+    {
+        width: calc(50% - 1rem);
+        min-width: 220px;
+        margin: 0;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 768px)
+{
+    div.telaPrincipal
+    {
+        flex-direction: column;
+    }
+
+    main
+    {
+        margin: 0.5rem;
+        width: auto;
+    }
+
+    h1#PessoaCargo,
+    h3#SubtituloPáginaAtual
+    {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #ResumoTudo
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    div#resumo,
+    div.col-3
+    {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    h2
+    {
+        width: auto;
+    }
+
+    p
+    {
+        width: auto;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 1024px)
+{
+    .ContainerFeed,
+    .ContainerFiltros,
+    .ContainerDenuncias
+    {
+        width: 100%;
+    }
+
+    main.FeedDenuncias
+    {
+        padding: 16px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 768px)
+{
+    .Filtros
+    {
+        flex-direction: column;
+    }
+
+    .Filtros input
+    {
+        max-width: 100%;
+    }
+
+    .CardDenuncia
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ImagemDenuncia
+    {
+        width: 100%;
+        min-width: unset;
+        max-width: 350px;
+        height: 200px;
+    }
+
+    .InfoDenuncia
+    {
+        width: 100%;
+    }
+
+    .TopInfo
+    {
+        flex-wrap: wrap;
+    }
+
+    .ContainerFeed h2
+    {
+        font-size: 28px;
+    }
+
+    .ContainerFiltros h3
+    {
+        font-size: 22px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 576px)
+{
+    main.FeedDenuncias
+    {
+        padding: 8px;
+    }
+
+    .ContainerFiltros,
+    .ContainerDenuncias
+    {
+        padding: 12px;
+    }
+
+    .CardDenuncia
+    {
+        padding: 12px;
+    }
+
+    .TopInfo
+    {
+        gap: 8px;
+    }
+
+    .Numero,
+    .Status,
+    .Categoria
+    {
+        font-size: 12px;
+    }
+
+    .InfoDenuncia h3
+    {
+        font-size: 1rem;
+    }
+
+    .InfoDenuncia p
+    {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .RodapeInfo
+    {
+        font-size: 11px;
+    }
+
+    .ImagemDenuncia
+    {
+        height: 180px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 320px)
+{
+    .ContainerFeed h2
+    {
+        font-size: 22px;
+    }
+
+    .ContainerFiltros h3
+    {
+        font-size: 18px;
+    }
+
+    .CardDenuncia
+    {
+        padding: 8px;
+    }
+
+    .Numero,
+    .Status,
+    .Categoria
+    {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .ImagemDenuncia
+    {
+        height: 140px;
+    }
+}
