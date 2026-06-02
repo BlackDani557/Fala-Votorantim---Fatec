@@ -72,3 +72,7 @@ header .row {
 .btn-pessoa a img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7484%) hue-rotate(205deg) brightness(105%) contrast(103%);
 }
+
+.link-header {
+    text-decoration: none;
+}
