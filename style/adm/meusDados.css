@@ -54,31 +54,80 @@ div.topbar
     display: none;
 }
 
-@media (max-width: 320px)
+div.topbar
 {
+    display: none;
+}
+
+.overlay
+{
+    display: none;
+}
+
+/* DEIXAR TUDO RESPONSIVO*/
+
+@media (max-width: 992px)
+{
+    .alinhasDenuncias
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     div.topbar
     {
-        display: flex;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-        gap: 24px;
-        padding: 16px 0 26px 0;
+        display: none;
     }
+}
 
-    div.topbar h2
-    {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: 1rem;
+@media (max-width: 768px)
+{
+        div.topbar
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        font-size: 1rem;
-    }
+            background-color: var(--CorPrincipalEscura);
+            color: white;
 
-    div.topbar button
-    {
-        margin: 0 1rem;
-        border: none;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-    }
+            padding: 1rem;
+
+            position: relative;
+            z-index: 10000;
+            height: 80px;
+        }
+
+        div.topbar h2
+        {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        div.topbar button
+        {
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .overlay
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(0,0,0,.5);
+
+            z-index: 9998;
+        }
+
+        .overlay.ativo
+        {
+            display: block;
+        }
 }

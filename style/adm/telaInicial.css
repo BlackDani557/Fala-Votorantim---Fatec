@@ -184,6 +184,11 @@ div.topbar
     display: none;
 }
 
+.overlay
+{
+    display: none;
+}
+
 /* DEIXAR TUDO RESPONSIVO*/
 
 @media (max-width: 992px)
@@ -201,76 +206,54 @@ div.topbar
 
 @media (max-width: 768px)
 {
-    .apresentacao
-    {
-        flex-direction: column;
-        text-align: center;
-    }
+        div.topbar
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    .alinhasDenuncias
-    {
-        grid-template-columns: 1fr;
-    }
+            background-color: var(--CorPrincipalEscura);
+            color: white;
 
-    .DenunciasHoje,
-    .DenunciasResolvidas,
-    .DenunciasPendentes
-    {
-        width: 100%;
-    }
+            padding: 1rem;
 
-    div.topbar
-    {
-        display: none;
-    }
+            position: relative;
+            z-index: 10000;
+            height: 80px;
+        }
+
+        div.topbar h2
+        {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        div.topbar button
+        {
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .overlay
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(0,0,0,.5);
+
+            z-index: 9998;
+        }
+
+        .overlay.ativo
+        {
+            display: block;
+        }
 }
 
-@media (max-width: 480px)
-{
-    main.carragarConteudo
-    {
-        padding: 1rem;
-    }
-
-    .MinhasDenuncias,
-    .DenunciasRecentes,
-    .apresentacao
-    {
-        padding: 1rem;
-    }
-
-    .MinhasDenuncias h2,
-    .DenunciasRecentes h2
-    {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 320px)
-{
-    div.topbar
-    {
-        display: flex;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-        gap: 24px;
-        padding: 16px 0 26px 0;
-    }
-
-    div.topbar h2
-    {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: 1rem;
-
-        font-size: 1rem;
-    }
-
-    div.topbar button
-    {
-        margin: 0 1rem;
-        border: none;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-    }
-}

@@ -221,54 +221,6 @@ div.topbar
 }
 
 /* ----------------------------------------*/
-@media (max-width: 768px)
-{
-    .Filtros
-    {
-        flex-direction: column;
-    }
-
-    .Filtros input
-    {
-        max-width: 100%;
-    }
-
-    .CardDenuncia
-    {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .ImagemDenuncia
-    {
-        width: 100%;
-        min-width: unset;
-        max-width: 350px;
-        height: 200px;
-    }
-
-    .InfoDenuncia
-    {
-        width: 100%;
-    }
-
-    .TopInfo
-    {
-        flex-wrap: wrap;
-    }
-
-    .ContainerFeed h2
-    {
-        font-size: 28px;
-    }
-
-    .ContainerFiltros h3
-    {
-        font-size: 22px;
-    }
-}
-
-/* ----------------------------------------*/
 @media (max-width: 576px)
 {
     main.FeedDenuncias
@@ -321,61 +273,80 @@ div.topbar
     }
 }
 
-/* ----------------------------------------*/
-@media (max-width: 320px)
+div.topbar
 {
-    
-    .ContainerFeed h2
+    display: none;
+}
+
+.overlay
+{
+    display: none;
+}
+
+/* DEIXAR TUDO RESPONSIVO*/
+
+@media (max-width: 992px)
+{
+    .alinhasDenuncias
     {
-        font-size: 22px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .ContainerFiltros h3
+    div.topbar
     {
-        font-size: 18px;
+        display: none;
     }
+}
 
-    .CardDenuncia
-    {
-        padding: 8px;
-    }
-
-    .Numero,
-    .Status,
-    .Categoria
-    {
-        font-size: 11px;
-        padding: 4px 10px;
-    }
-
-    .ImagemDenuncia
-    {
-        height: 140px;
-    }
-
+@media (max-width: 768px)
+{
         div.topbar
-    {
-        display: flex;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-        gap: 24px;
-        padding: 16px 0 26px 0;
-    }
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    div.topbar h2
-    {
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: 1rem;
+            background-color: var(--CorPrincipalEscura);
+            color: white;
 
-        font-size: 1rem;
-    }
+            padding: 1rem;
 
-    div.topbar button
-    {
-        margin: 0 1rem;
-        border: none;
-        background-color: var(--CorPrincipalEscura);
-        color: white;
-    }
+            position: relative;
+            z-index: 10000;
+            height: 80px;
+        }
+
+        div.topbar h2
+        {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        div.topbar button
+        {
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .overlay
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: rgba(0,0,0,.5);
+
+            z-index: 9998;
+        }
+
+        .overlay.ativo
+        {
+            display: block;
+        }
 }
