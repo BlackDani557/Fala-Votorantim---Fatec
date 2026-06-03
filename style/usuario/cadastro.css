@@ -17,7 +17,7 @@ body{
 
 .FundoForm{
     width: calc( 100% - 128px );
-    margin: 0px auto 32px auto;
+    margin: 0px auto 16px auto;
     background-color: var(--CorBranco);
     border-radius: 16px;
     padding-top: 16px;
