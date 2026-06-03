@@ -10,7 +10,7 @@ Plataforma web para registro e acompanhamento de denúncias urbanas, aproximando
 
 Você pode visualizar a interface do projeto rodando diretamente no GitHub Pages:
 
-🔗 [Acessar o Fala Votorantim](https://blackdani557.github.io/Fala-Votorantim---Fatec/Fala%20Votorantim/Views/HomePage.html)
+🔗 [Acessar o Fala Votorantim](https://blackdani557.github.io/Fala-Votorantim---Fatec/)
 
 ---
 
