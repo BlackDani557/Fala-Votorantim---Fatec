@@ -1,7 +1,7 @@
 //PEGAR SÓ O HEADER
 
 // pegar a pasta
-fetch("acessibilidade/menuLateral.html")
+fetch("/componentes/adm/menuLateral.html")
 
 //transforma em texto
 .then((resposta) => resposta.text())
@@ -16,7 +16,7 @@ fetch("acessibilidade/menuLateral.html")
 
 // PEGAR SOMENTE O FOOTER
 
-fetch("acessibilidade/footer.html")
+fetch("/componentes/adm/footer.html")
 .then((Respostas) => Respostas.text())
 .then((dadosF) => {
     document.getElementById('footer').innerHTML = dadosF;
@@ -26,7 +26,7 @@ fetch("acessibilidade/footer.html")
 
 // PEGAR O CADASTRO DE DENUNCIAS
 
-fetch("Blocos/cadastroDenuncia.html")
+fetch("/componentes/adm/cadastroDenuncia.html")
 .then((resposta) => resposta.text())
 .then((dados) => {
     document.getElementById('feed').innerHTML = dados;

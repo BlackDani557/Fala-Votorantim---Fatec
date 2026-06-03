@@ -23,7 +23,7 @@ main.FeedDenuncias {
 
 /* TÍTULO */
 
-.ContainerFeed h2 {
+h2 .ContainerFeed {
     font-size: 32px;
     font-weight: 500;
     color: var(--CorPreta);

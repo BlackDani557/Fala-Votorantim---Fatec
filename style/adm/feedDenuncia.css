@@ -1,5 +1,5 @@
-@import url(style.css);
-@import url(../../style/feed.css);
+@import url(/style/adm/style.css);
+@import url(/style/geral/feed.css);
 
 body
 {

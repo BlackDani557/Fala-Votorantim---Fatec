@@ -15,8 +15,21 @@
 </head>
 <body>
     <header id="header"></header>
+    
         
-    <main class="FeedDenuncias" id="FeedDenuncias"></main>
+    <main class="FeedDenuncias">
+        <section class="ContainerFeed">
+
+            <!-- TÍTULO DA PÁGINA -->
+            <h2>Feed de Denuncias</h2>
+
+            <!-- FILTROS DAS DENUNCIAS -->
+            <div id="filtros"></div>
+
+            <!-- FEED DE DENUNCIAS -->
+            <div class="ContainerDenuncias box-shadow" id="FeedDenuncias"></div>
+        </section>
+    </main>
 
 
 
@@ -25,7 +38,8 @@
 
     <!-- __________________________________________ -->
     <script src="/funcionalidades/geral/headerFooter.js"></script>
-    <script src="/funcionalidades/geral/feedEFiltroDenuncias.js"></script>
+    <script src="/funcionalidades/geral/filtroDenuncias.js"></script>
+    <script src="/funcionalidades/geral/feedDenuncias.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

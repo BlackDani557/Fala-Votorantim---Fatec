@@ -1,7 +1,7 @@
 @import url(style.css);
-@import url(../../style/cssReset.css);
-@import url(../../style/footer.css);
-@import url(../../style/header.css);
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/footer.css);
+@import url(/style/geral/header.css);
 
 body
 {
@@ -22,11 +22,10 @@ main#telaPrincipal
     margin: auto auto auto auto;
 
     width: 950px;
-    height: 760px;
 
     max-height: 1024px;
 
-    padding: 1rem;
+    padding: 2rem;
 }
 
 div.telaPrincipalDiv

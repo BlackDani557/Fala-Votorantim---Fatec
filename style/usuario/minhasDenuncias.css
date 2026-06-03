@@ -1,7 +1,7 @@
 @import url(minhasDenunciasFeed.css);
-@import url(../../style/cssReset.css);
-@import url(../../style/variaveis.css);
-@import url(../../style/style.css);
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/variaveis.css);
+@import url(/style/geral/style.css);
 
 main
 {

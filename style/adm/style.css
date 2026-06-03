@@ -1,7 +1,7 @@
-@import url(../../style/variaveis.css);
-@import url(../../style/cssReset.css);
-@import url(../../style/footer.css);
-@import url(../../style/menuLateral.css);
+@import url(/style/geral/variaveis.css);
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/footer.css);
+@import url(/style/geral/menuLateral.css);
 
 /* RESET GERAL */
 *,

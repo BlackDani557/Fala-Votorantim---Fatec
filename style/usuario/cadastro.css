@@ -1,6 +1,6 @@
-@import url(../../style/cssReset.css);
-@import url(../../style/variaveis.css);
-@import url(../../style/style.css);
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/variaveis.css);
+@import url(/style/geral/style.css);
 
 body{
     background-color: var(--CorCinzaClaro);
@@ -11,9 +11,13 @@ body{
     background-color: var(--CorPrincipalClara);
 }
 
+#cadastroH1 {
+    margin:0 auto;
+}
+
 .FundoForm{
     width: calc( 100% - 128px );
-    margin: 16px 64px 32px 64px;
+    margin: 0px auto 32px auto;
     background-color: var(--CorBranco);
     border-radius: 16px;
     padding-top: 16px;
@@ -21,7 +25,7 @@ body{
 }
 
 .formularioDenuncia{
-    margin: 0 32px ;
+    margin: 0 32px;
 }
 .titulo {
     margin-left: 64px;
