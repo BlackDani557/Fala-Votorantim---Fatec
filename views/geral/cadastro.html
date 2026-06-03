@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Votorantim - Cadastro</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSSs -->
+    <link rel="stylesheet" href="/style/geral/style.css">
+    <link rel="stylesheet" href="/style/geral/cadastro.css">
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <main class="LoginWrapper">
+
+        <div class="Container">
+
+            <form class="LoginForm box-shadow" onsubmit="Cadastro(event)">
+
+                <!-- ESSE AQUI É A LOGO-->
+                <div class="LogoLogin">
+                    <i class="bi bi-door-open-fill"></i>
+                </div>
+
+                <h2>Seja Bem-Vindo</h2>
+
+                <!-- Nome Completo -->
+                <div class="InputGroup">
+                    <label for="NomeCompleto">Nome Completo</label>
+
+                    <input type="text" name="NomeCompleto" id="NomeCompleto" placeholder="Nome Completo">
+                </div>
+
+                <!-- EMAIL -->
+                <div class="InputGroup">
+                    <label for="email">Email</label>
+
+                    <input type="email" name="email" id="email" placeholder="seu@gmail.com">
+                </div>
+
+                <!-- Telefone -->
+                <div class="InputGroup">
+                    <label for="telefone">Telefone</label>
+
+                    <input type="text" name="telefone" id="telefone" placeholder="(00) 00000 0000">
+                </div>
+
+                <!-- SENHA -->
+                <div class="InputGroup">
+                    <label for="senha">Senha</label>
+
+                    <input type="password" name="senha" id="senha" placeholder="Sua Senha">
+                </div>
+
+                <!-- Confirmação de senha -->
+                <div class="InputGroup">
+                    <label for="senha">Confirmar senha</label>
+
+                    <input type="password" name="senha" id="Confsenha" placeholder="Digite sua senha de novo">
+                </div>
+
+
+                <!-- BOTÃO PARA CADASTRAR -->
+                <button type="submit" class="BtnEntrar">
+                    Cadastrar
+                </button>
+
+                <!-- IR PARA A TELA DE LOGAR -->
+                <p class="CadastroTexto">
+                    Já possui uma conta?
+                    <a href="/views/geral/login.html">Logar</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- __________________________________________ -->
+    <script src="/funcionalidades/geral/headerFooter.js"></script>
+    <script src="/funcionalidades/geral/cadastroLogin.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

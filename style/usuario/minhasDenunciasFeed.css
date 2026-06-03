@@ -1,0 +1,257 @@
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/variaveis.css);
+@import url(/style/geral/style.css);
+
+@import url(/style/geral/feed.css);
+
+/* ========================= */
+/* FEED DE DENÚNCIAS */
+/* ========================= */
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main#feed
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+main.FeedDenuncias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    background-color: var(--CorCinzaClaro);
+}
+/* CONTAINER GERAL */
+
+.ContainerFeed {
+    min-width: 100%;
+}
+
+.ContainerFiltros {
+    /* width: 1024px; */
+    min-width: 100%;
+}
+
+.ContainerDenuncias {
+    min-width: 100%;
+}
+
+/* TÍTULO */
+
+.ContainerFeed h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--CorPreta);
+    margin-bottom: 12px;
+}
+
+/* ========================= */
+/* FILTROS */
+/* ========================= */
+
+.ContainerFiltros {
+    width: 1024px;
+    background-color: var(--CorBranco);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.ContainerFiltros h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--DetalheCinza);
+    margin-bottom: 14px;
+}
+
+/* INPUTS */
+
+.Filtros {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.Filtros input {
+    width: 100%;
+    max-width: 320px;
+    height: 48px;
+    border-radius: 10px;
+    border: 2px solid var(--CorCinza);
+    background-color: var(--CorBranco);
+    padding-left: 14px;
+    font-size: 16px;
+    outline: none;
+}
+
+.Filtros input::placeholder {
+    color: var(--CorCinza);
+}
+
+/* ========================= */
+/* FEED */
+/* ========================= */
+
+.ContainerDenuncias {
+    width: 1024px;
+    /* border: 1px solid #8D96A5; */
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--CorBranco);
+}
+
+/* CARD */
+
+.CardDenuncia {
+    width: 100%;
+    min-height: 220px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+.CardDenuncia:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================= */
+/* CORES DOS CARDS */
+/* ========================= */
+
+.Azul {
+    background-color: var(--FundoAzulClaro);
+    border: 2px solid var(--BordaAzulClara);
+}
+
+.Verde {
+    background-color: var(--FundoVerdeClara);
+    border: 2px solid var(--BordaVerdeClara);
+}
+
+.Amarelo {
+    background-color: var(--FundoAmarelo);
+    border: 2px solid var(--BordaAmarela);
+}
+
+/* ========================= */
+/* INFO */
+/* ========================= */
+
+.InfoDenuncia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOPO */
+
+.TopInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+/* NÚMERO */
+
+.Numero {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--CorCinza);
+    background-color: var(--CorBranco);
+    font-size: 14px;
+    color: var(--CorPreta);
+}
+
+/* STATUS */
+
+.Status {
+    padding: 6px 20px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* STATUS CORES */
+
+.StatusAzul {
+    border: 2px solid var(--BordaAzulClara);
+    color: var(--DetalheAzul);
+    background-color: var(--FundoAzulClaro);
+}
+
+.StatusVerde {
+    border: 2px solid var(--BordaVerdeClara);
+    color: var(--DetalheVerde);
+    background-color: var(--FundoVerdeClara);
+}
+
+.StatusAmarelo {
+    border: 2px solid var(--BordaAmarela);
+    color: var(--DetalheLaranja);
+    background-color: var(--FundoAmarelo);
+}
+
+/* TÍTULO */
+
+.InfoDenuncia h3 {
+    /* font-size: 18px; */
+    font-weight: 500;
+    color: var(--DetalheCinza);
+    margin-bottom: 12px;
+}
+
+/* CATEGORIA */
+
+.Categoria {
+    width: fit-content;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--CorCinza);
+    background-color: var(--CorBranco);
+    /* font-size: 14px; */
+    color: var(--CorPreta);
+    margin-bottom: 14px;
+}
+
+/* DESCRIÇÃO */
+
+.InfoDenuncia p {
+    /* font-size: 15px; */
+    color: var(--DetalheCinza);
+    margin-bottom: auto;
+}
+
+/* RODAPÉ */
+
+.RodapeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--CorCinza);
+    margin-top: 18px;
+}
+
+/* ========================= */
+/* IMAGEM */
+/* ========================= */
+
+.ImagemDenuncia {
+    width: 190px;
+    min-width: 190px;
+    height: 170px;
+    border-radius: 10px;
+    border: 2px solid var(--BordaAzulClara);
+    background-color: var(--FundoAzulClaro);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Votorantim - login</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style/geral/style.css">
+    <link rel="stylesheet" href="/style/geral/login.css">
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main class="LoginWrapper">
+
+        <div class="Container">
+
+            <form class="LoginForm box-shadow" onsubmit="Logar(event)">
+
+                <div class="LogoLogin">
+                    <i class="bi bi-door-open-fill"></i>
+                </div>
+
+                <h2>Bem-vindo de volta</h2>
+
+                <!-- EMAIL -->
+                <div class="InputGroup">
+                    <label for="email">Email</label>
+
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="seu@gmail.com"
+                    >
+                </div>
+
+                <!-- SENHA -->
+                <div class="InputGroup">
+                    <label for="senha">Senha</label>
+
+                    <input 
+                        type="password" 
+                        name="senha" 
+                        id="senha"
+                        placeholder="Sua Senha"
+                    >
+                </div>
+
+                <!-- BOTÃO -->
+                <button type="submit" class="BtnEntrar">
+                    Entrar
+                </button>
+
+                <!-- CADASTRO -->
+                <p class="CadastroTexto">
+                    Tem uma conta Cadastrada?
+                    <a href="/views/geral/cadastro.html">Cadastre-se</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- __________________________________________ -->
+    <script src="/funcionalidades/geral/headerFooter.js"></script>
+    <script src="/funcionalidades/geral/cadastroLogin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

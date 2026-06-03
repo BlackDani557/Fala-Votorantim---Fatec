@@ -1,6 +1,0 @@
-@import url(minhasDenuncias-Feed.css);
-
-/* Background do Botão da página que está aberta */
-#feedDenunciasUsuario {
-    background-color: var(--CorPrincipalClara);
-}

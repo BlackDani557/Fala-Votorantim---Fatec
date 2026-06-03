@@ -1,0 +1,19 @@
+@import url(minhasDenunciasFeed.css);
+@import url(/style/geral/cssReset.css);
+@import url(/style/geral/variaveis.css);
+@import url(/style/geral/style.css);
+
+main
+{
+    margin: 1rem auto 1rem auto;
+}
+
+/* Background do Botão da página que está aberta */
+#minhasDenuncias {
+    background-color: var(--CorPrincipalClara);
+}
+
+h2#DenunciasSalvas
+{
+    margin-top: 2rem;
+}

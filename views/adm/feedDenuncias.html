@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Votorantim - Feed de denuncias - ADM</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style/adm/style.css">
+    <link rel="stylesheet" href="/style/adm/feedDenuncia.css">
+</head>
+
+<body>
+    <div class="telaPrincipal">
+        <aside id="menuLateral"></aside>
+
+        <main class="flex-center">
+            <section class="ContainerFeed container1280">
+                <!-- TÍTULO DA PÁGINA -->
+                <h1 id="PessoaCargo">Admin</h1>
+                <h3 id="SubtituloPáginaAtual">Inicio ADM</h3>
+                <!-- INSERE O RESUMOS DAS DENUNCIAS -->
+                <div class="ResumoFeed container text-center" id="resumoDenuncias"></div>
+                <!-- INSERE OS FILTROS PARA DENÚNCIAS -->
+                    <div id="filtros"></div>
+                    <!-- INSERE O FEED DE DENÚNCIAS -->
+                    <div class="ContainerDenuncias box-shadow" id="FeedDenuncias"></div>
+            </section>
+        </main>
+    </div>
+    <footer id="footer"></footer>
+    <script src="/funcionalidades/adm/headerFooter.js"></script>
+    <script src="/funcionalidades/adm/resumoDenuncias.js"></script>
+    <script src="/funcionalidades/adm/filtroDenunciasAdm.js"></script>
+    <script src="/funcionalidades/adm/feedDenunciasAdm.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

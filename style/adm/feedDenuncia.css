@@ -1,0 +1,381 @@
+@import url(/style/adm/style.css);
+@import url(/style/geral/feed.css);
+
+body
+{
+    background-color: var(--CorCinzaClaro);
+}
+
+a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* só para deixar tudo lateralizado */
+div.telaPrincipal
+{
+   display: flex;
+}
+
+main
+{
+    margin-left: 1rem;
+
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+section.ContainerFeed
+{
+    width: 100%;
+    /* height: 100%; */
+}
+
+div.ContainerFiltros,div.ContainerDenuncias
+{
+    width: 99%;
+}
+
+h2
+{
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+p
+{
+    width: 13rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div#resumo,
+div.col-3
+{
+    background-color: #fff;
+
+    width: 15.1875rem;
+    min-height: 120px;
+
+    margin: 0 1rem 1rem 0;
+    padding: 1rem;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+#ResumoTudo .total
+{
+    border-left: 5px solid var(--CorCinzaEscura);
+    box-shadow: 0 4px 15px rgba(74, 85, 101, 0.25);
+}
+
+#ResumoTudo .pendentes
+{
+    border-left: 5px solid var(--BordaAmarela);
+    box-shadow: 0 4px 15px rgba(255, 240, 133, 0.50);
+}
+
+#ResumoTudo .andamento
+{
+    border-left: 5px solid var(--CorPrincipalEscura);
+    box-shadow: 0 4px 15px rgba(25, 60, 184, 0.25);
+}
+
+#ResumoTudo .resolvido
+{
+    border-left: 5px solid var(--DetalheVerde);
+    box-shadow: 0 4px 15px rgba(13, 84, 43, 0.25);
+}
+
+div#resumo:hover,
+div.col-3:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+h3#SubtituloPáginaAtual
+{
+    color: var(--CorCinza);
+    margin-left: 2rem;
+}
+
+h1#PessoaCargo
+{
+    color: var(--CorPreta);
+}
+
+#ResumoTudo {
+    justify-content: space-between;
+}
+
+div.topbar
+{
+    display: none;
+}
+
+/* ----------------------------------------*/
+@media (max-width: 992px)
+{
+    main
+    {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    
+
+    div.ContainerFiltros,
+    div.ContainerDenuncias
+    {
+        width: 100%;
+    }
+
+    #ResumoTudo
+    {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    div#resumo,
+    div.col-3
+    {
+        width: calc(50% - 1rem);
+        min-width: 220px;
+        margin: 0;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 768px)
+{
+    div.telaPrincipal
+    {
+        flex-direction: column;
+    }
+
+    main
+    {
+        margin: 0.5rem;
+        width: auto;
+    }
+
+    h1#PessoaCargo,
+    h3#SubtituloPáginaAtual
+    {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #ResumoTudo
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    div#resumo,
+    div.col-3
+    {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    h2
+    {
+        width: auto;
+    }
+
+    p
+    {
+        width: auto;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 1024px)
+{
+    .ContainerFeed,
+    .ContainerFiltros,
+    .ContainerDenuncias
+    {
+        width: 100%;
+    }
+
+    main.FeedDenuncias
+    {
+        padding: 16px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 768px)
+{
+    .Filtros
+    {
+        flex-direction: column;
+    }
+
+    .Filtros input
+    {
+        max-width: 100%;
+    }
+
+    .CardDenuncia
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ImagemDenuncia
+    {
+        width: 100%;
+        min-width: unset;
+        max-width: 350px;
+        height: 200px;
+    }
+
+    .InfoDenuncia
+    {
+        width: 100%;
+    }
+
+    .TopInfo
+    {
+        flex-wrap: wrap;
+    }
+
+    .ContainerFeed h2
+    {
+        font-size: 28px;
+    }
+
+    .ContainerFiltros h3
+    {
+        font-size: 22px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 576px)
+{
+    main.FeedDenuncias
+    {
+        padding: 8px;
+    }
+
+    .ContainerFiltros,
+    .ContainerDenuncias
+    {
+        padding: 12px;
+    }
+
+    .CardDenuncia
+    {
+        padding: 12px;
+    }
+
+    .TopInfo
+    {
+        gap: 8px;
+    }
+
+    .Numero,
+    .Status,
+    .Categoria
+    {
+        font-size: 12px;
+    }
+
+    .InfoDenuncia h3
+    {
+        font-size: 1rem;
+    }
+
+    .InfoDenuncia p
+    {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .RodapeInfo
+    {
+        font-size: 11px;
+    }
+
+    .ImagemDenuncia
+    {
+        height: 180px;
+    }
+}
+
+/* ----------------------------------------*/
+@media (max-width: 320px)
+{
+    
+    .ContainerFeed h2
+    {
+        font-size: 22px;
+    }
+
+    .ContainerFiltros h3
+    {
+        font-size: 18px;
+    }
+
+    .CardDenuncia
+    {
+        padding: 8px;
+    }
+
+    .Numero,
+    .Status,
+    .Categoria
+    {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .ImagemDenuncia
+    {
+        height: 140px;
+    }
+
+        div.topbar
+    {
+        display: flex;
+        background-color: var(--CorPrincipalEscura);
+        color: white;
+        gap: 24px;
+        padding: 16px 0 26px 0;
+    }
+
+    div.topbar h2
+    {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: 1rem;
+
+        font-size: 1rem;
+    }
+
+    div.topbar button
+    {
+        margin: 0 1rem;
+        border: none;
+        background-color: var(--CorPrincipalEscura);
+        color: white;
+    }
+}
