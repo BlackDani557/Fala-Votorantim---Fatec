@@ -1,7 +1,7 @@
 // puxar o header
 
 // BUSCAR PÁGINA
-fetch('../componentes/geral/header.html')
+fetch('../../componentes/geral/header.html')
 
 //TRANSFORMAR EM TEXTO O QUE ESTÁ NA PÁGINA
 .then((response) => response.text())
@@ -19,7 +19,7 @@ fetch('../componentes/geral/header.html')
 ///////////////////
 
 // BUSCAR PÁGINA
-fetch('../componentes/geral/footer.html')
+fetch('../../componentes/geral/footer.html')
 
 //TRANSFORMAR EM TEXTO O QUE ESTÁ NA PÁGINA
 .then((resposta) => resposta.text())
