@@ -98,6 +98,11 @@ h2 .ContainerFeed {
     margin-bottom: 14px;
 }
 
+.CardDenuncia:hover
+{
+    transform: scale(1.01);
+}
+
 .CardDenuncia:last-child {
     margin-bottom: 0;
 }
