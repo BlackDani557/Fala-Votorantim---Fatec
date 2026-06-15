@@ -1,25 +1,21 @@
 @import url(/style/adm/style.css);
 @import url(/style/geral/feed.css);
 
-body
-{
+body {
     background-color: var(--CorCinzaClaro);
 }
 
-a
-{
+a {
     color: #fff;
     text-decoration: none;
 }
 
 /* só para deixar tudo lateralizado */
-div.telaPrincipal
-{
-   display: flex;
+div.telaPrincipal {
+    display: flex;
 }
 
-main
-{
+main {
     margin-left: 1rem;
 
     width: 100%;
@@ -27,33 +23,29 @@ main
     margin-left: 1rem;
 }
 
-section.ContainerFeed
-{
+section.ContainerFeed {
     width: 100%;
     /* height: 100%; */
 }
 
-div.ContainerFiltros,div.ContainerDenuncias
-{
+div.ContainerFiltros,
+div.ContainerDenuncias {
     width: 99%;
 }
 
-h2
-{
+h2 {
     width: 8rem;
     margin-top: 1rem;
 }
 
-p
-{
-    width: 13rem;
+p {
+    min-width: 13rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 div#resumo,
-div.col-3
-{
+div.col-3 {
     background-color: #fff;
 
     width: 15.1875rem;
@@ -71,68 +63,57 @@ div.col-3
     justify-content: center;
 
     transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+        box-shadow 0.2s ease;
 }
 
-#ResumoTudo .total
-{
+#ResumoTudo .total {
     border-left: 5px solid var(--CorCinzaEscura);
     box-shadow: 0 4px 15px rgba(74, 85, 101, 0.25);
 }
 
-#ResumoTudo .total h2
-{
-    margin-left: 18%;
+#ResumoTudo .total h2 {
+    margin: 1rem auto;
 }
 
-#ResumoTudo .pendentes
-{
+#ResumoTudo .pendentes {
     border-left: 5px solid var(--BordaAmarela);
     box-shadow: 0 4px 15px rgba(255, 240, 133, 0.50);
 }
 
-#ResumoTudo .pendentes h2
-{
-    margin-left: 17%;
+#ResumoTudo .pendentes h2 {
+    margin: 1rem auto;
 }
 
-#ResumoTudo .andamento
-{
+#ResumoTudo .andamento {
     border-left: 5px solid var(--CorPrincipalEscura);
     box-shadow: 0 4px 15px rgba(25, 60, 184, 0.25);
 }
 
-#ResumoTudo .andamento h2
-{
-    margin-left: 17%;
+#ResumoTudo .andamento h2 {
+    margin: 1rem auto;
 }
 
-#ResumoTudo .resolvido
-{
+#ResumoTudo .resolvido {
     border-left: 5px solid var(--DetalheVerde);
     box-shadow: 0 4px 15px rgba(13, 84, 43, 0.25);
 }
 
-#ResumoTudo .resolvido h2
-{
-    margin-left: 17%;
+#ResumoTudo .resolvido h2 {
+    margin: 1rem auto;
 }
 
 div#resumo:hover,
-div.col-3:hover
-{
+div.col-3:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-h3#SubtituloPáginaAtual
-{
+h3#SubtituloPáginaAtual {
     color: var(--CorCinza);
     margin-left: 2rem;
 }
 
-h1#PessoaCargo
-{
+h1#PessoaCargo {
     color: var(--CorPreta);
 }
 
@@ -140,35 +121,29 @@ h1#PessoaCargo
     justify-content: space-between;
 }
 
-div.topbar
-{
+div.topbar {
     display: none;
 }
 
 /* ----------------------------------------*/
-@media (max-width: 992px)
-{
-    main
-    {
+@media (max-width: 992px) {
+    main {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
-    
+
     div.ContainerFiltros,
-    div.ContainerDenuncias
-    {
+    div.ContainerDenuncias {
         width: 100%;
     }
 
-    #ResumoTudo
-    {
+    #ResumoTudo {
         justify-content: center;
         gap: 1rem;
     }
 
     div#resumo,
-    div.col-3
-    {
+    div.col-3 {
         width: calc(50% - 1rem);
         min-width: 220px;
         margin: 0;
@@ -176,28 +151,23 @@ div.topbar
 }
 
 /* ----------------------------------------*/
-@media (max-width: 768px)
-{
-    div.telaPrincipal
-    {
+@media (max-width: 768px) {
+    div.telaPrincipal {
         flex-direction: column;
     }
 
-    main
-    {
+    main {
         margin: 0.5rem;
         width: auto;
     }
 
     h1#PessoaCargo,
-    h3#SubtituloPáginaAtual
-    {
+    h3#SubtituloPáginaAtual {
         text-align: center;
         margin-left: 0;
     }
 
-    #ResumoTudo
-    {
+    #ResumoTudo {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -205,166 +175,144 @@ div.topbar
     }
 
     div#resumo,
-    div.col-3
-    {
+    div.col-3 {
         width: 100%;
         max-width: 350px;
     }
 
-    h2
-    {
+    h2 {
         width: auto;
     }
 
-    p
-    {
+    p {
         width: auto;
     }
 }
 
 /* ----------------------------------------*/
-@media (max-width: 1024px)
-{
+@media (max-width: 1024px) {
+
     .ContainerFeed,
     .ContainerFiltros,
-    .ContainerDenuncias
-    {
+    .ContainerDenuncias {
         width: 100%;
     }
 
-    main.FeedDenuncias
-    {
+    main.FeedDenuncias {
         padding: 16px;
     }
 }
 
 /* ----------------------------------------*/
-@media (max-width: 576px)
-{
-    main.FeedDenuncias
-    {
+@media (max-width: 576px) {
+    main.FeedDenuncias {
         padding: 8px;
     }
 
     .ContainerFiltros,
-    .ContainerDenuncias
-    {
+    .ContainerDenuncias {
         padding: 12px;
     }
 
-    .CardDenuncia
-    {
+    .CardDenuncia {
         padding: 12px;
     }
 
-    .TopInfo
-    {
+    .TopInfo {
         gap: 8px;
     }
 
     .Numero,
     .Status,
-    .Categoria
-    {
+    .Categoria {
         font-size: 12px;
     }
 
-    .InfoDenuncia h3
-    {
+    .InfoDenuncia h3 {
         font-size: 1rem;
     }
 
-    .InfoDenuncia p
-    {
+    .InfoDenuncia p {
         width: 100%;
         font-size: 0.9rem;
     }
 
-    .RodapeInfo
-    {
+    .RodapeInfo {
         font-size: 11px;
     }
 
-    .ImagemDenuncia
-    {
+    .ImagemDenuncia {
         height: 180px;
     }
 }
 
-div.topbar
-{
+div.topbar {
     display: none;
 }
 
-.overlay
-{
+.overlay {
     display: none;
 }
 
 /* DEIXAR TUDO RESPONSIVO*/
 
-@media (max-width: 992px)
-{
-    .alinhasDenuncias
-    {
+@media (max-width: 992px) {
+    .alinhasDenuncias {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    div.topbar
-    {
+    div.topbar {
         display: none;
+    }
+
+    .ResumoFeed {
+        margin-bottom: 1rem;
     }
 }
 
-@media (max-width: 768px)
-{
-        div.topbar
-        {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+@media (max-width: 768px) {
+    div.topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-            background-color: var(--CorPrincipalEscura);
-            color: white;
+        background-color: var(--CorPrincipalEscura);
+        color: white;
 
-            padding: 1rem;
+        padding: 1rem;
 
-            position: relative;
-            z-index: 10000;
-            height: 80px;
-        }
+        position: relative;
+        z-index: 10000;
+        height: 80px;
+    }
 
-        div.topbar h2
-        {
-            margin: 0;
-            font-size: 1rem;
-        }
+    div.topbar h2 {
+        margin: 0;
+        font-size: 1rem;
+    }
 
-        div.topbar button
-        {
-            border: none;
-            background: transparent;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
+    div.topbar button {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 
-        .overlay
-        {
-            position: fixed;
-            top: 0;
-            left: 0;
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
 
-            width: 100%;
-            height: 100%;
+        width: 100%;
+        height: 100%;
 
-            background-color: rgba(0,0,0,.5);
+        background-color: rgba(0, 0, 0, .5);
 
-            z-index: 9998;
-        }
+        z-index: 9998;
+    }
 
-        .overlay.ativo
-        {
-            display: block;
-        }
+    .overlay.ativo {
+        display: block;
+    }
 }
