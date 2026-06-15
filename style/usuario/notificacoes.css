@@ -5,6 +5,7 @@ body
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--CorCinzaClaro);
 }
 
 /* Background do Botão da página que está aberta */
@@ -16,9 +17,11 @@ main.telaPrincipal
 {
     flex: 1;
     margin: 1rem auto;
-    width: 1024px;
+    max-width: 1024px;
+    margin: 1rem auto;
     padding: 1rem;
     border-radius: 15px;
+    background-color: var(--CorBranco);
 }
 
 h2

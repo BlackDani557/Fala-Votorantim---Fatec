@@ -58,7 +58,7 @@ main.FeedDenuncias {
 /* ========================= */
 
 .ContainerFiltros {
-    width: 1024px;
+    max-width: 1024px;
     background-color: var(--CorBranco);
     border-radius: 8px;
     padding: 12px;
@@ -101,7 +101,7 @@ main.FeedDenuncias {
 /* ========================= */
 
 .ContainerDenuncias {
-    width: 1024px;
+    max-width: 1024px;
     /* border: 1px solid #8D96A5; */
     border-radius: 8px;
     padding: 1rem;

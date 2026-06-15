@@ -3,8 +3,13 @@
 @import url(/style/geral/variaveis.css);
 @import url(/style/geral/style.css);
 
+body {
+    background-color: var(--CorCinzaClaro);
+}
+
 main
 {
+    background-color: var(--CorCinzaClaro);
     margin: 1rem auto 1rem auto;
 }
 
