@@ -194,3 +194,7 @@ div.Container
         font-size: 28px;
     }
 }
+
+span.vermelho {
+    color: red;
+}
