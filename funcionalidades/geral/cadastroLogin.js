@@ -28,11 +28,18 @@ function Cadastro(e)
         confSenha
     };
 
-    // esse ele está salvando os dados diretamente no navegador do usuario(não é recomendado kkkk)
-    localStorage.setItem('Usuarios', JSON.stringify(Usuarios));
+    if(nomeCompleto == "" || email == "" || telefone == "" || senha == "" || confSenha == "")
+    {
+        alert("Por favor, digite as infosmações abaixo para que possamos cadastrar")
+    }
+    else
+    {
+        // esse ele está salvando os dados diretamente no navegador do usuario(não é recomendado kkkk)
+        localStorage.setItem('Usuarios', JSON.stringify(Usuarios));
 
-    // alerta ao usuario(não vou explicar isso pois vocês já sabem o que faz kkkk)
-    alert("Usuário cadastrado");
+        // alerta ao usuario(não vou explicar isso pois vocês já sabem o que faz kkkk)
+        alert("Usuário cadastrado");
+    }
 }
 
 // função que tem "event"
