@@ -17,6 +17,7 @@ main.telaPrincipal
 {
     flex: 1;
     margin: 1rem auto;
+    width: 100%;
     max-width: 1024px;
     margin: 1rem auto;
     padding: 1rem;
